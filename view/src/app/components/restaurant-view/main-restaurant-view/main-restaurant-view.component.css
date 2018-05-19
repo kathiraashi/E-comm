@@ -1,0 +1,317 @@
+.Restaurant_View{
+    background-color: #ebedf3;
+    width: 100%;
+    height: 100%;
+}
+.Store_Info_Image_Section{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    padding: 80px 0px;
+}
+.Store_Info_Image_Section::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.60);
+}
+
+.Store_Info_Detail{
+    display: table;
+    width: 100%;
+}
+
+
+/* ----------------------------- */
+.Store_Info_Detail_Left{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.Store_Info_Detail_Left .Img_Section{
+    display: block;
+    width: 90px;
+    height: 100px;
+    float: left;
+}
+.Store_Info_Detail_Left .Img_Section figure{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 1px;
+}
+.Store_Info_Detail_Left .Img_Section figure img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.Store_Info_Detail_Left .Text_Section{
+    display: block;
+    padding: 0 0 0 18px;
+    float: left;
+    width: calc(100% - 90px);
+}
+.Store_Info_Detail_Left .Text_Section .Stars_Group{
+    display: flex;
+}
+.Store_Info_Detail_Left .Text_Section .Stars_Group i{
+    color: #999999;
+    font-size: 21px;
+}
+.Store_Info_Detail_Left .Text_Section .Stars_Group i.colored{
+    color: #ff981a;
+}
+.Store_Info_Detail_Left .Text_Section .Stars_Group .Reviews_Count{
+    margin-left: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    opacity: 0.7;
+}
+.Store_Info_Detail_Left .Text_Section .Title{
+    color: #ffffff;
+}
+.Store_Info_Detail_Left .Text_Section .Special_Items{
+    color: #ffffff;
+    opacity: 0.7;
+}
+.Store_Info_Detail_Left .Text_Section .Special_Items span{
+    margin-left: 2px
+}
+
+/* ----------------------------- */
+.Store_Info_Detail_Right{
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 300px;
+}
+.Store_Info_Detail_Right .Time_Info p{
+    display: flex;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+.Store_Info_Detail_Right .Time_Info p i{
+    color: #ff981a;
+    margin-right: 5px;
+}
+.Store_Info_Detail_Right .Working_Time{
+    position: relative;
+    margin-top: 20px;
+}
+.Store_Info_Detail_Right  .Today_Timing{
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+.Store_Info_Detail_Right  .Today_Timing p{
+    float: left;
+    color: #ff981a;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    width: 75px;
+}
+.Store_Info_Detail_Right .Today_Timing i{
+    float: right;
+}
+.Store_Info_Detail_Right ul.Daily_Timing{
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    margin: 0px;
+    border: 1px solid #e6e6e6;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 0px;
+}
+.Store_Info_Detail_Right .Working_Time:hover > ul.Daily_Timing{
+    max-height: 500px !important;
+    transition: max-height 0.75s ease-in !important;
+    
+}
+.Store_Info_Detail_Right .Daily_Timing li {
+    height: 35px;
+    border-top: 1px solid #e6e6e6;
+}
+.Store_Info_Detail_Right .Daily_Timing li {
+    height: 35px;
+    border-top: 1px solid #e6e6e6;
+}
+.Store_Info_Detail_Right .Daily_Timing li > div{
+    margin: 0px;
+    padding: 5px 10px;
+    color: #999999;
+    line-height: 25px;
+    font-size: 14px;
+}
+.Store_Info_Detail_Right .Daily_Timing li > div > p{
+    display: inline-flex;
+    width: 85px;
+    margin-bottom: 0px;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Store_Main_Section{
+    margin-top: 30px;
+}
+.Store_Main_Section .Category_list .Title{
+    margin: 0px;
+    display: flex;
+    padding: 5px 0px;
+    color: #484848;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    border-bottom: 2px dashed #8a8a8a;
+    margin-bottom: 15px;
+}
+.Store_Main_Section .Category_list .Title i{
+    margin-right: 7px;
+    color: #484848;
+}
+ul.List {
+    list-style-type: none;
+    padding: 0px;
+}
+ul.List li {
+    padding: 5px 0px 5px 0px;
+    border-bottom: 1px solid #e2e2e2;
+    cursor: pointer;
+    font-size: 14px;
+    color: #888888;
+}
+ul.List li:hover {
+    color: #ff981b;
+}
+
+
+.Store_Full_Details > .Tabs {
+    display: inline-flex;
+    width: 100%;
+}
+.Store_Full_Details > .Tabs > div {
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+}
+.Store_Full_Details > .Tabs > div.active {
+    background-color: #ffffff;
+    box-shadow: 0 -3px 4px -2px rgba(0, 0, 0, 0.1);
+}
+.Store_Full_Details > .Tabs > div > p {
+    display: inline-flex;
+    margin: 0px;
+    padding: 10px 0px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #484848;
+    letter-spacing: 0.5px;
+}
+.Store_Full_Details > .Tabs > div > p > i{
+    margin-right: 5px;
+    color: #ff981a;
+    font-size: 21px;
+}
+
+
+.Tab_Contents{
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.Tab_Contents_1{
+    position: relative;
+}
+
+.Tab_Contents_1 .Category .Category_Title{
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+.Tab_Contents_1 .Category .Category_Title h5{
+    color: #ff981b;
+    margin-bottom: 0px;
+}
+.Tab_Contents_1 .Category .Category_Title span{
+    font-size: 13px;
+    color: #999999;
+    font-weight: 400;
+}
+.Tab_Contents_1 .Category .Category_List{
+    list-style-type: none;
+    padding: 0px 20px;
+}
+.Tab_Contents_1 .Category .Category_List .Category_Item{
+    display: inline-flex;
+    border-bottom: 1px solid #ebedf3;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    position: relative;
+}
+.Tab_Contents_1 .Category .Category_List .Image_Section{
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    vertical-align: top;
+}
+.Tab_Contents_1 .Category .Category_List .Image_Section img{
+    max-width: 100%;
+}
+.Tab_Contents_1 .Category .Category_List .Item_Info{
+    padding: 0px 10px;
+    width: calc(100% - 170px);
+}
+.Tab_Contents_1 .Category .Category_List .Item_Info .Item_Name{
+    font-weight: 700;
+    margin: 0px;
+    color: #484848;
+}
+.Tab_Contents_1 .Category .Category_List .Item_Info .Item_Details{
+    margin: 0px;
+    font-size: 13px;
+    color: #999999;
+    letter-spacing: 0.4px;
+}
+.Tab_Contents_1 .Category .Category_List .Price_Info{
+    display: inline-flex;
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-left: 10px;
+    height: 40px;
+}
+.Tab_Contents_1 .Category .Category_List .Price_Info .Price{
+    font-size: 16px;
+}
+.Tab_Contents_1 .Category .Category_List .Price_Info i{
+    margin-left: 30px;
+    color: #ff981b;
+    cursor: pointer;
+}
