@@ -1,3 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import './assets/OverWrite-Css/ngx-bootstarp-overwrite.css';
+@import './assets/OverWrite-Css/agm-overwrite.css';
+
 body { margin: 0; }

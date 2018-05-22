@@ -141,7 +141,6 @@
 .Store_Info_Detail_Right .Working_Time:hover > ul.Daily_Timing{
     max-height: 500px !important;
     transition: max-height 0.75s ease-in !important;
-    
 }
 .Store_Info_Detail_Right .Daily_Timing li {
     height: 35px;
@@ -250,7 +249,35 @@ ul.List li:hover {
 .Tab_Contents_1{
     position: relative;
 }
-
+.Tab_Contents_1 .Search_Food .search_input{
+    position: relative;
+    width: 100%;
+    padding: 0px 20px;
+}
+.Tab_Contents_1 .Search_Food .search_input input{
+    border: none;
+    border-bottom: 1px solid #89898975;
+    width: 100%;
+    padding: 3px;
+    color: #484848;
+    font-weight: 600;
+    outline: none !important;
+}
+.Tab_Contents_1 .Search_Food .search_input input:-ms-input-placeholder{
+    font-weight: 400;
+    color: #ababab;
+}
+.Tab_Contents_1 .Search_Food .search_input ::-webkit-input-placeholder{
+    font-weight: 400;
+    color: #ababab;
+}
+.Tab_Contents_1 .Search_Food .search_input i{
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+    color: #484848;
+    bottom: 0px;
+}
 .Tab_Contents_1 .Category .Category_Title{
     padding: 10px 20px;
     margin-bottom: 15px;
@@ -283,7 +310,9 @@ ul.List li:hover {
     vertical-align: top;
 }
 .Tab_Contents_1 .Category .Category_List .Image_Section img{
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .Tab_Contents_1 .Category .Category_List .Item_Info{
     padding: 0px 10px;
@@ -313,5 +342,489 @@ ul.List li:hover {
 .Tab_Contents_1 .Category .Category_List .Price_Info i{
     margin-left: 30px;
     color: #ff981b;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.Tab_Contents_2 {
+    background-color: #ffffff;
+    padding: 20px;
+}
+.Tab_Contents_2 .Ratings{
+    background-color: #eaeaeaad;
+    padding: 5px 10px;
+}
+.Tab_Contents_2 .Ratings .Overall_Ratings h5{
+    font-size: 18px;
+    color: #484848;
+}
+.Tab_Contents_2 .Ratings .Overall_Ratings .Rating_Div{
+    display: inline-flex;
+}
+.Tab_Contents_2 .Ratings .Overall_Ratings .Rating_Div .Rating_Count{
+    font-size: 17px;
+    margin-right: 10px;
+    font-weight: 700;
+    color: #484848;
+}
+.Tab_Contents_2 .Ratings .Overall_Ratings .Rating_Div .Stars_Group_1{
+    margin-top: 2px;
+    margin-right: 10px;
+}
+.Tab_Contents_2 .Ratings .Overall_Ratings .Rating_Div .Stars_Group_1 i{
+    color: #888888;
+    font-size: 21px;
+}
+.Tab_Contents_2 .Ratings .Overall_Ratings .Rating_Div .Stars_Group_1 i.colored{
+    color: #ff981b;
+}
+.Tab_Contents_2 .Ratings .Overall_Ratings .Rating_Div .Rating_Users_Count{
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #999999ad;
+}
+
+hr.Hr_Style_1{
+    margin: 10px 0px;
+}
+
+.Ratings_Summary {
+    position: relative;
+}
+.Ratings_Summary h5 {
+    font-size: 18px;
+    color: #484848;
+}
+.Ratings_Summary .Ratings_Summary_List {
+    display: inline-flex;
+    width: 100%;
+}
+.Ratings_Summary .Ratings_Summary_Item {
+    width: 33.3%;
+    border-right: 1px solid #9999994f;
+    text-align: center;
+}
+.Ratings_Summary .Ratings_Summary_Item h6 {
+    color: #666666;
+}
+.Ratings_Summary .Ratings_Summary_Item .Ratings_Summary_Item_Stars {
+    display: inline-flex;
+    margin-left: 5px;
+}
+.Ratings_Summary .Ratings_Summary_Item .Ratings_Summary_Item_Stars .Rating_Count {
+    font-weight: 600;
+    color: #484848;
+    margin-right: 4px;
+}
+.Ratings_Summary .Ratings_Summary_Item .Ratings_Summary_Item_Stars .Stars_Group_2 {
+    width: 100%;
+    position: relative;
+}
+.Ratings_Summary .Ratings_Summary_Item .Ratings_Summary_Item_Stars .Stars_Group_2  i {
+    color: #888888;
+    font-size: 21px;
+}
+.Ratings_Summary .Ratings_Summary_Item .Ratings_Summary_Item_Stars .Stars_Group_2  i.colored {
+    color: #ff981b;
+}
+
+
+
+.Reviews .Customer_Reviews {
+    margin-top: 20px;
+}
+
+.Reviews .Customer_Reviews .Customer_Reviews_Header {
+    display: table;
+    width: 100%;
+}
+.Reviews .Customer_Reviews .Customer_Reviews_Header h5 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 18px;
+    color: #484848;
+}
+.Reviews .Customer_Reviews .Customer_Reviews_Header .Customer_Reviews_Short_Div {
+    vertical-align: middle;
+    display: table-cell;
+    width: 150px;
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+.Reviews .Customer_Reviews .Customer_Reviews_Header .Customer_Reviews_Short_Div p {
+    margin: 0px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    padding: 3px 0px;
+    color: #999999;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.Reviews .Customer_Reviews .Customer_Reviews_Header .Customer_Reviews_Short_Div p i{
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+.Reviews .Customer_Reviews .Customer_Reviews_Header .Customer_Reviews_Short_Div .Customer_Reviews_Short_list {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+    position: absolute;
+    list-style-type: none;
+    padding: 0px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    z-index: 1;
+}
+.Reviews .Customer_Reviews .Customer_Reviews_Header .Customer_Reviews_Short_Div:hover .Customer_Reviews_Short_list {
+    max-height: 500px !important;
+    opacity: 1 !important;
+    transition: max-height 0.55s ease-in,  opacity 0.05s ease-in, !important;
+}
+.Reviews .Customer_Reviews .Customer_Reviews_Header .Customer_Reviews_Short_Div .Customer_Reviews_Short_list li{
+    border-bottom: 1px solid #cdcdcd75;
+    text-align: center;
+    font-size: 14px;
+    padding: 3px 0px;
+    color: #999999;
+}
+.Reviews .Customer_Reviews .Customer_Reviews_Header .Customer_Reviews_Short_Div .Customer_Reviews_Short_list li:hover{
+    color: #ff981a;
+}
+
+.Reviews .Customer_Reviews .Customer_Reviews_List {
+    margin-top: 20px;
+}
+.Reviews .Customer_Reviews_List .Customer_Reviews_Item {
+    position: relative;
+    width: 100%;
+}
+.Reviews .Customer_Reviews_List .Customer_Reviews_Item .Customer_Info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.Reviews .Customer_Reviews_List .Customer_Reviews_Item .Customer_Info p {
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #616161;
+    margin-right: 10px;
+}
+.Reviews .Customer_Reviews_List .Customer_Reviews_Item .Customer_Info span {
+    color: #999999ad;
+    font-size: 13px;
+    font-weight: 600;
+}
+.Reviews .Customer_Reviews_List .Customer_Reviews_Item .Rating_Info {
+    display: flex;
+    margin-left: 15px;
+}
+.Reviews .Customer_Reviews_List .Customer_Reviews_Item .Rating_Info .Rating_Count {
+    color: #616161;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.Reviews .Customer_Reviews_List .Customer_Reviews_Item .Rating_Info .Stars_Group_3 i {
+    color: #999999;
+    font-size: 21px;
+}
+.Reviews .Customer_Reviews_List .Customer_Reviews_Item .Rating_Info .Stars_Group_3 i.colored {
+    color: #ff981b;
+}
+.Reviews .Customer_Reviews_List .Customer_Reviews_Item .Review_Text {
+    margin-left: 15px;
+    margin-top: -5px;
+}
+.Reviews .Customer_Reviews_List .Customer_Reviews_Item .Review_Text p{
+    font-size: 14px;
+    color: #999999;
+}
+
+
+
+.Tab_Contents_3{
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.Tab_Contents_3 h5{
+    font-size: 18px;
+    color: #484848;
+}
+.Tab_Contents_3 .Gmap_Section .Agm_Map{
+    border: 1px solid #484848;
+}
+.Tab_Contents_3 .Gmap_Section agm-map{
+    height: 250px;
+}
+.Tab_Contents_3 .Contact_Section{
+    margin-top: 20px;
+}
+.Tab_Contents_3 .Contact_Section h5{
+    font-size: 18px;
+    color: #484848;
+}
+.Tab_Contents_3 .Contact_Section .Address_Section{
+    display: flex;
+}
+.Tab_Contents_3 .Contact_Section .Address_Section i{
+    margin-right: 5px;
+    color: #ff981b;
+}
+.Tab_Contents_3 .Contact_Section .Address_Section p{
+    font-size: 14px;
+    color: #999999;
+    font-weight: 600;
+} 
+.Tab_Contents_3 .Contact_Section .Mobile{
+    display: flex;
+} 
+.Tab_Contents_3 .Contact_Section .Mobile i{
+    margin-right: 5px;
+    color: #ff981b;
+} 
+.Tab_Contents_3 .Contact_Section .Mobile p{
+    color: #999999;
+    font-weight: 600;
+    font-size: 14px;
+} 
+.Tab_Contents_3 .Contact_Section .email{
+    display: flex;
+} 
+.Tab_Contents_3 .Contact_Section .email i{
+    margin-right: 5px;
+    color: #ff981b;
+} 
+.Tab_Contents_3 .Contact_Section .email p{
+    color: #999999;
+    font-weight: 600;
+    font-size: 14px;
+} 
+.Tab_Contents_3 .Contact_Section .website{
+    display: flex;
+} 
+.Tab_Contents_3 .Contact_Section .website i{
+    margin-right: 5px;
+    color: #ff981b;
+} 
+.Tab_Contents_3 .Contact_Section .website p{
+    color: #999999;
+    font-weight: 600;
+    font-size: 14px;
+} 
+
+.Tab_Contents_3 .Opening_Hours{
+    margin-top: 20px;
+}
+.Tab_Contents_3 .Opening_Hours h5{
+    font-size: 18px;
+    color: #484848;
+}
+.Tab_Contents_3 .Opening_Hours .Opening_Hours_List{
+    padding: 0;
+    list-style-type: none;
+    padding-left: 15px;
+}
+.Tab_Contents_3 .Opening_Hours .Opening_Hours_List li{
+    color: #999999;
+    font-size: 14px;
+    padding: 3px 0px;
+}
+.Tab_Contents_3 .Opening_Hours .Opening_Hours_List li span{
+    color: #484848;
+    width: 90px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+.Tab_Contents_4{
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.Tab_Contents_4 h5{
+    font-size: 20px;
+    color: #484848;
+}
+.Tab_Contents_4 .Orders_History_Header {
+    display: table;
+    width: 100%;
+}
+.Tab_Contents_4 .Orders_History_Header h5 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 18px;
+    color: #484848;
+}
+.Tab_Contents_4 .Orders_History_Header .Orders_History_Short_Div {
+    vertical-align: middle;
+    display: table-cell;
+    width: 180px;
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+.Tab_Contents_4 .Orders_History_Header .Orders_History_Short_Div p {
+    margin: 0px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    padding: 3px 0px;
+    color: #999999;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.Tab_Contents_4 .Orders_History_Header .Orders_History_Short_Div p i{
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+.Tab_Contents_4 .Orders_History_Header .Orders_History_Short_Div .Orders_History_Short_list {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+    position: absolute;
+    list-style-type: none;
+    padding: 0px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    z-index: 1;
+}
+.Tab_Contents_4 .Orders_History_Header .Orders_History_Short_Div:hover .Orders_History_Short_list {
+    max-height: 500px !important;
+    opacity: 1 !important;
+    transition: max-height 0.55s ease-in,  opacity 0.05s ease-in, !important;
+
+}
+.Tab_Contents_4 .Orders_History_Header .Orders_History_Short_Div .Orders_History_Short_list li{
+    border-bottom: 1px solid #cdcdcd75;
+    text-align: center;
+    font-size: 14px;
+    padding: 3px 0px;
+    color: #999999;
+}
+.Tab_Contents_4 .Orders_History_Header .Orders_History_Short_Div .Orders_History_Short_list li:hover{
+    color: #ff981a;
+}
+
+
+.Tab_Contents_4 .Orders_List{
+    list-style-type: none;
+    padding: 0px;
+}
+.Tab_Contents_4 .Orders_List .Orders_Item{
+    display: inline-flex;
+    border-bottom: 1px solid #ebedf3;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    position: relative;
+}
+.Tab_Contents_4 .Orders_List .Orders_Item .Image_Section{
+    display: inline-block;
+    width: 85px;
+    height: 85px;
+    vertical-align: top;
+}
+.Tab_Contents_4 .Orders_List .Orders_Item .Image_Section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Tab_Contents_4 .Orders_List .Orders_Item .Item_Info{
+    padding: 0px 10px;
+    width: calc(100% - 180px);
+}
+.Tab_Contents_4 .Orders_List .Orders_Item .Item_Info .Item_Name{
+    font-weight: 700;
+    margin: 0px;
+    color: #484848;
+}
+.Tab_Contents_4 .Orders_List .Orders_Item .Item_Info .Item_Details{
+    margin: 0px;
+    font-size: 13px;
+    color: #999999;
+    letter-spacing: 0.4px;
+}
+.Tab_Contents_4 .Orders_List .Orders_Item .Item_Info .Order_Info{
+    margin: 5px 0px 0px 0px;
+}
+.Tab_Contents_4 .Orders_List .Orders_Item .Item_Info .Order_Info .Price{
+    font-weight: 700;
+    color: #484848;
+    padding-right: 10px;
+}
+.Tab_Contents_4 .Orders_List .Orders_Item .Item_Info .Order_Info .View_btn{
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #484848;
+    padding: 3px 8px 5px 8px;
+    border-radius: 20px;
+}
+.Tab_Contents_4 .Orders_List .Orders_Item .Item_Info .Order_Info .View_btn.Completed{
+    background-color: green;
+}
+.Tab_Contents_4 .Orders_List .Orders_Item .Item_Info .Order_Info .View_btn.Processing{
+    background-color: #00adff;
+}
+.Tab_Contents_4 .Orders_List .Orders_Item .Item_Info .Order_Info .View_btn.Canceled{
+    background-color: red;
+}
+.Tab_Contents_4 .Orders_List .Orders_Item .Item_Status{
+    text-align: center;
+}
+.Tab_Contents_4 .Orders_List .Orders_Item .Item_Status .Status_btn{
+    font-size: 14px;
+    border: 1px solid #ff981b;
+    color: #ff981b;
+    font-weight: 500;
+    padding: 2px 5px;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    display: block;
+    cursor: pointer;
+}
+.Tab_Contents_4 .Orders_List .Orders_Item .Item_Status .Reorder_btn{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 5px;
+    border: 1px solid #0192b3;
+    color: #0192b3;
+    margin-top: 15px;
+    display: block;
     cursor: pointer;
 }

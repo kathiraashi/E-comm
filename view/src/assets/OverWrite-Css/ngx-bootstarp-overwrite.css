@@ -1,0 +1,12 @@
+
+/* Main Header Login Model Css */
+.Login_Model{
+    max-width: 400px !important;
+}
+.Login_Model .modal-header{
+    padding: 12px 15px !important;
+    border: 0px;
+}
+.Login_Model .modal-header .close{
+    padding: 20px;
+}

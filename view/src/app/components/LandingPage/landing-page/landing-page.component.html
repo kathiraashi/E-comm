@@ -1,0 +1,39 @@
+<app-main-header></app-main-header>
+
+<div class="Landing_Map">
+  <agm-map [latitude]="lat" [zoom]="17" [longitude]="lng" [styles]= "styles">
+    <agm-circle [latitude]="circleLat" [longitude]="circleLng" [radius]="80" [fillColor]="'#FA601F'" ></agm-circle>
+    <agm-circle [latitude]="circleLat" [longitude]="circleLng" [radius]="120" [fillColor]="'#FA601F'"></agm-circle>
+
+    <agm-marker [latitude]="circleLat" [longitude]="circleLng" [markerDraggable]="true" (dragEnd)="updateCircle($event)" >
+      <agm-snazzy-info-window [maxWidth]="200" [closeWhenOthersOpen]="true">
+        <ng-template>
+            <div class="marker_info">
+              <p class="user_location"> Your Location </p>
+            </div>
+        </ng-template>
+      </agm-snazzy-info-window>
+    </agm-marker>
+
+    <agm-marker [latitude]="11.045477" [longitude]="76.9757776" >
+      <agm-snazzy-info-window [maxWidth]="200" [placement]="'left'" [closeWhenOthersOpen]="true">
+        <ng-template>
+          <div class="marker_info">
+            <p class="loc_name"> Gril In <span> ( Ganapathy )</span> </p>
+            <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
+            <p class="deliver_time"> Deliverd at <span> 4 pm </span>  </p>
+            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span></p>
+          </div>
+        </ng-template>
+      </agm-snazzy-info-window>
+    </agm-marker>
+
+  </agm-map>
+
+  <div class="Filter_Section">
+    <div class="Icon_Group">
+      <i class="material-icons"> filter_list </i>
+      <i class="material-icons">restaurant </i>
+    </div>
+  </div>
+</div>

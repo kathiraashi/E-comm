@@ -1,4 +1,7 @@
+<app-main-header></app-main-header>
+
 <div class="Restaurant_View">
+  <!-- Store Basic Info Background Image Section -->
   <div class="Store_Info_Image_Section" style=" background: url(assets/Images/demo/photo01.jpg) no-repeat scroll 0 0 / cover;">
     <!-- Container Start -->
     <div class="container">
@@ -22,7 +25,7 @@
                   <i class="material-icons">star_border</i>
                   <span class="Reviews_Count">(5 Reviews)</span>
                 </div>
-                <h3 class="Title">Restaurant Demo</h3>
+                <h3 class="Title">Restaurant Name</h3>
                 <div class="Special_Items">
                   <span>Burgers, </span>
                   <span>Pizzas, </span>
@@ -81,8 +84,10 @@
     <!-- Container End -->
   </div>
   
+  <!-- Store Full Info Section -->
   <div class="container Store_Main_Section">
     <div class="row">
+      <!-- Store Full Info Category Section -->
       <div class="col-sm-2">
         <div class="Category_list">
           <p class="Title"> <i class="material-icons">list_alt</i> Categories </p>
@@ -107,22 +112,75 @@
           </ul>
         </div>
       </div>
+      <!-- Store Full Info Tabs Section -->
       <div class="col-sm-7">
         <div class="Store_Full_Details">
+          <!-- Store Full Info Tabs Header -->
           <div class="Tabs">
-            <div class="active"> <p> <i class="material-icons">room_service</i> Menu </p>  </div>
-            <div> <p> <i class="material-icons">rate_review</i> Reviews </p>  </div>
-            <div> <p> <i class="material-icons">info</i> Restaurant Info </p>  </div>
-            <div> <p> <i class="material-icons">history</i> Orders History </p>  </div>
+            <div [ngClass]="{'active': Active_Tab === 'Menu'}" (click)="Change_Active_Tab('Menu')"> <p> <i class="material-icons">room_service</i> Menu </p>  </div>
+            <div [ngClass]="{'active': Active_Tab === 'Reviews'}" (click)="Change_Active_Tab('Reviews')"> <p> <i class="material-icons">rate_review</i> Reviews </p>  </div>
+            <div [ngClass]="{'active': Active_Tab === 'Restaurant_Info'}" (click)="Change_Active_Tab('Restaurant_Info')"> <p> <i class="material-icons">info</i> Restaurant Info </p>  </div>
+            <div [ngClass]="{'active': Active_Tab === 'Orders_History'}" (click)="Change_Active_Tab('Orders_History')"> <p> <i class="material-icons">history</i> Orders History </p>  </div>
           </div>
+          <!-- Store Full Info Tabs Contents -->
           <div class="Tab_Contents">
-            <div class="Tab_Contents_1">
+            <!-- Store Full Info Tab One Content -->
+            <div *ngIf="Active_Tab === 'Menu'" class="Tab_Contents_1" >
+              <!-- Store Full Info Tab One Search bar -->
+                <div class="Search_Food">
+                  <div class="search_input">
+                    <input type="text" placeholder="Search Food Item">
+                    <i class="material-icons">search</i>
+                  </div>
+                </div>
+                <!-- Store Full Info Tab One Content Categories -->
                 <div class="Category">
+                  <!-- Store Full Info Tab One Content Category Title -->
                   <div class="Category_Title">
                     <h5>Pizzas</h5>
                     <span>Choose your cut: Triangular, square, fingers or Un cut on any size pizza.</span>
                   </div>
+                  <!-- Store Full Info Tab One Content Category Food List -->
                   <ul class="Category_List">
+                    <li class="Category_Item">
+                      <div class="Image_Section">
+                        <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/blogs-food-bakery-05-150x150.jpg" alt="">
+                      </div>
+                      <div class="Item_Info">
+                        <h6 class="Item_Name"> Margherita 9" Deep Pan</h6>
+                        <p class="Item_Details">Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs</p>
+                      </div>
+                      <div class="Price_Info">
+                        <span class="Price"> $4.50 </span>
+                        <i class="material-icons"> add_circle_outline </i>
+                      </div>
+                    </li>
+                    <li class="Category_Item">
+                      <div class="Image_Section">
+                        <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/blogs-food-bakery-05-150x150.jpg" alt="">
+                      </div>
+                      <div class="Item_Info">
+                        <h6 class="Item_Name"> Margherita 9" Deep Pan</h6>
+                        <p class="Item_Details">Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs</p>
+                      </div>
+                      <div class="Price_Info">
+                        <span class="Price"> $4.50 </span>
+                        <i class="material-icons"> add_circle_outline </i>
+                      </div>
+                    </li>
+                    <li class="Category_Item">
+                      <div class="Image_Section">
+                        <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/blogs-food-bakery-05-150x150.jpg" alt="">
+                      </div>
+                      <div class="Item_Info">
+                        <h6 class="Item_Name"> Margherita 9" Deep Pan</h6>
+                        <p class="Item_Details">Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs</p>
+                      </div>
+                      <div class="Price_Info">
+                        <span class="Price"> $4.50 </span>
+                        <i class="material-icons"> add_circle_outline </i>
+                      </div>
+                    </li>
                     <li class="Category_Item">
                       <div class="Image_Section">
                         <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/blogs-food-bakery-05-150x150.jpg" alt="">
@@ -165,11 +223,286 @@
                   </ul>
                 </div>
             </div>
+            <!-- Store Full Info Tab Two Content -->
+            <div *ngIf="Active_Tab === 'Reviews'" class="Tab_Contents_2" >
+              <div class="Ratings">
+                <!-- Store Full Info Tab Two Overall Ratings -->
+                <div class="Overall_Ratings">
+                  <h5> Overall Customer Rating For Restaurant Name </h5>
+                  <div class="Rating_Div">
+                      <span class="Rating_Count">4.5</span>
+                      <div class="Stars_Group_1">
+                        <i class="material-icons colored">star</i>
+                        <i class="material-icons colored">star</i>
+                        <i class="material-icons colored">star</i>
+                        <i class="material-icons colored">star</i>
+                        <i class="material-icons colored">star_half</i>
+                      </div>
+                      <span class="Rating_Users_Count"> ( Based on 23 Users )</span>
+                  </div>
+                </div>
+                <hr class="Hr_Style_1">
+                <!-- Store Full Info Tab Two Ratings Div-->
+                <div class="Ratings_Summary">
+                  <h5> Ratings Summary </h5>
+                  <div class="Ratings_Summary_List">
+                    <!-- Store Full Info Tab Two Ratings Service-->
+                    <div class="Ratings_Summary_Item">
+                      <h6> Service </h6>
+                      <div class="Ratings_Summary_Item_Stars">
+                        <span class="Rating_Count">4.5</span>
+                        <div class="Stars_Group_2">
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star_half</i>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Store Full Info Tab Two Ratings Quality-->
+                    <div class="Ratings_Summary_Item">
+                      <h6> Quality </h6>
+                      <div class="Ratings_Summary_Item_Stars">
+                        <span class="Rating_Count">4.5</span>
+                        <div class="Stars_Group_2">
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star_half</i>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Store Full Info Tab Two Ratings Value-->
+                    <div class="Ratings_Summary_Item">
+                      <h6> Value </h6>
+                      <div class="Ratings_Summary_Item_Stars">
+                        <span class="Rating_Count">4.5</span>
+                        <div class="Stars_Group_2">
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star_half</i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Reviews">
+                <!-- Store Full Info Tab Two Customer Reviews-->
+                <div class="Customer_Reviews">
+                  <!-- Store Full Info Tab Two Customer Reviews Header-->
+                  <div class="Customer_Reviews_Header">
+                    <h5> Customer Reviews For Restaurant Name </h5>
+                    <div class="Customer_Reviews_Short_Div">
+                      <p> Newest Reviews <i class="material-icons">keyboard_arrow_down</i> </p> 
+                      <ul class="Customer_Reviews_Short_list">
+                        <li> Newest Reviews </li>
+                        <li> Oldest Reviews </li>
+                        <li> Highest Rating </li>
+                        <li> Lowest Rating </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Store Full Info Tab Two Customer Reviews List-->
+                  <div class="Customer_Reviews_List">
+                    <div class="Customer_Reviews_Item">
+                      <div class="Customer_Info">
+                        <p> Customer Name </p> <span> ( 01 Jan 2018 ) </span>
+                      </div>
+                      <div class="Rating_Info">
+                        <span class="Rating_Count"> 4.5 </span>
+                        <div class="Stars_Group_3">
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star_half</i>
+                        </div>
+                      </div>
+                      <div class="Review_Text">
+                        <p> A wonderful experience. </p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="Customer_Reviews_Item">
+                      <div class="Customer_Info">
+                        <p> Customer Name </p> <span> ( 01 Jan 2018 )</span>
+                      </div>
+                      <div class="Rating_Info">
+                        <span class="Rating_Count"> 4.5 </span>
+                        <div class="Stars_Group_3">
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star_half</i>
+                        </div>
+                      </div>
+                      <div class="Review_Text">
+                        <p> I had great food the other day. </p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="Customer_Reviews_Item">
+                      <div class="Customer_Info">
+                        <p> Customer Name </p> <span> ( 01 Jan 2018 )</span>
+                      </div>
+                      <div class="Rating_Info">
+                        <span class="Rating_Count"> 4.5 </span>
+                        <div class="Stars_Group_3">
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star</i>
+                          <i class="material-icons colored">star_half</i>
+                        </div>
+                      </div>
+                      <div class="Review_Text">
+                        <p> I had great food the other day. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Store Full Info Tab Three Content -->
+            <div *ngIf="Active_Tab === 'Restaurant_Info'" class="Tab_Contents_3">
+              <!-- Store Full Info Tab Three Map Section -->
+              <div class="Gmap_Section">
+                <h5> Restaurant Location </h5>
+                <div class="Agm_Map">
+                  <agm-map [latitude]="lat" [longitude]="lng" [styles]= "styles">
+                    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                  </agm-map>
+                </div>
+              </div>
+              <!-- Store Full Info Tab Three Info Section -->
+              <div class="row">
+                <div class="col-sm-6">
+                  <!-- Store Full Info Tab Three Contact Details -->
+                  <div class="Contact_Section">
+                    <h5> Contact Details </h5>
+                    <div class="Address_Section"> 
+                      <i class="material-icons">location_on</i> 
+                      <p> 
+                        <span> 12-Siva Complex, </span> 
+                        <span> Ganapathy Puthur, </span> 
+                        <span> Coimbatore, </span> 
+                        <span> Tamilnadu, </span> 
+                        <span> India. </span> 
+                        <span> 641 007 </span>
+                      </p> 
+                    </div>
+                    <div class="Mobile">
+                      <i class="material-icons">call</i>
+                      <p> +91 9876543210 <br>  +91 00123456789
+                      </p>
+                    </div>
+                    <div class="email">
+                      <i class="material-icons">email</i>
+                      <p> Sample@mail.com <br> Sample@mail.com </p>
+                    </div>
+                    <div class="website">
+                      <i class="material-icons">public</i>
+                      <p> www.sample.com </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <!-- Store Full Info Tab Three Opening Hours -->
+                  <div class="Opening_Hours">
+                    <h5>Opening Hours</h5>
+                    <ul class="Opening_Hours_List">
+                      <li>
+                        <span>Monday</span>11:00 am - 11:00 pm</li>
+                      <li>
+                        <span>Tuesday</span>11:00 am - 11:00 pm</li>
+                      <li>
+                        <span>Wednesday</span>11:00 am - 11:00 pm</li>
+                      <li>
+                        <span>Thursday</span>11:00 am - 11:00 pm</li>
+                      <li>
+                        <span>Friday</span>11:00 am - 11:00 pm</li>
+                      <li>
+                        <span>Saturday</span>11:00 am - 11:00 pm</li>
+                      <li>
+                        <span>Sunday</span>Off</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Store Full Info Tab Four Content -->
+            <div *ngIf="Active_Tab === 'Orders_History'" class="Tab_Contents_4">
+              <!-- Store Full Info Tab Four Orders History Header -->
+              <div class="Orders_History_Header">
+                <h5>My Orders </h5>
+                <div class="Orders_History_Short_Div">
+                  <p> Select Orders Status <i class="material-icons">keyboard_arrow_down</i> </p> 
+                  <ul class="Orders_History_Short_list">
+                    <li> All </li>
+                    <li> Completed </li>
+                    <li> Processing </li>
+                    <li> Canceled </li>
+                  </ul>
+                </div>
+              </div>
+              <br>
+              <!-- Store Full Info Tab Four Orders History List -->
+              <ul class="Orders_List">
+                <li class="Orders_Item">
+                  <div class="Image_Section">
+                    <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/blogs-food-bakery-05-150x150.jpg" alt="">
+                  </div>
+                  <div class="Item_Info">
+                    <h6 class="Item_Name"> Margherita 9" Deep Pan</h6>
+                    <p class="Item_Details">Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs</p>
+                    <p class="Order_Info"> <span class="Price"> $4.50 </span> <span class="View_btn Completed"> Completed </span></p>
+                  </div>
+                  <div class="Item_Status">
+                    <span class="Status_btn"> View Order </span>
+                    <span class="Reorder_btn"> Reorder </span>
+                  </div>
+                </li>
+                <li class="Orders_Item">
+                  <div class="Image_Section">
+                    <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/blogs-food-bakery-05-150x150.jpg" alt="">
+                  </div>
+                  <div class="Item_Info">
+                    <h6 class="Item_Name"> Margherita 9" Deep Pan</h6>
+                    <p class="Item_Details">Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs</p>
+                    <p class="Order_Info"> <span class="Price"> $4.50 </span> <span class="View_btn Processing"> Processing </span></p>
+                  </div>
+                  <div class="Item_Status">
+                    <span class="Status_btn"> View Order </span>
+                    <span class="Reorder_btn"> Reorder </span>
+                  </div>
+                </li>
+                <li class="Orders_Item">
+                  <div class="Image_Section">
+                    <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/blogs-food-bakery-05-150x150.jpg" alt="">
+                  </div>
+                  <div class="Item_Info">
+                    <h6 class="Item_Name"> Margherita 9" Deep Pan</h6>
+                    <p class="Item_Details">Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs</p>
+                    <p class="Order_Info"> <span class="Price"> $4.50 </span> <span class="View_btn Canceled"> Canceled </span></p>
+                  </div>
+                  <div class="Item_Status">
+                    <span class="Status_btn"> View Order </span>
+                    <span class="Reorder_btn"> Reorder </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
       <div class="col-sm-3">
-  
+    
       </div>
     </div>
   </div>

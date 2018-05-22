@@ -1,0 +1,78 @@
+
+.Landing_Map{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+.Landing_Map agm-map{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 30px);
+}
+
+.marker_info{
+    padding: 5px 0px 0px 10px;
+}
+.user_location{
+    text-align: center;
+    margin: 0px 5px 5px 0px;
+    font-size: 16px;
+}
+.loc_name{
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #27ae61;
+    font-weight: 600;
+}
+.loc_name > span{
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+}
+.order_time{
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+.order_time > span {
+    color: #27ae61;
+    font-weight: 600;
+}
+.deliver_time {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+.deliver_time > span {
+    color: #27ae61;
+    font-weight: 600;
+}
+.distance {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+.distance > span {
+    color: #27ae61;
+    font-weight: 600;
+}
+
+
+
+.Filter_Section {
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+}
+.Filter_Section .Icon_Group {
+    background-color: #fd6a03;
+    color: #ffffff;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    border-radius: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 1px;
+}
+.Filter_Section .Icon_Group i{
+    font-size: 25px;
+}

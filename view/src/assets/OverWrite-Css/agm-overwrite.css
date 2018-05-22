@@ -1,0 +1,41 @@
+/* agm snazzy Pointer Style Changes  */
+.si-content-wrapper{
+    border: none !important;
+    padding: 5px !important;
+    background-color:#2d3e50c2 !important;
+    color: #fff !important;
+    min-width: 300px !important;
+}
+.si-content{
+    max-width: 100% !important;
+}
+.si-close-button{
+    display: none !important;
+}
+.si-pointer-bg-left{
+    border-left-color: #2d3e50c2 !important
+}
+.si-pointer-bg-top{
+    border-top-color: #2d3e50c2 !important
+}
+.si-pointer-border-left{
+    border-left-color: transparent !important
+}
+
+
+/* Hide Google Infos */
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+.gm-svpc{
+    display: none !important;
+}
+/* .gmnoprint{
+    display: none !important;
+} */

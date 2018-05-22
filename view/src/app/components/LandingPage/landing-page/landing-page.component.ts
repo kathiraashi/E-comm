@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-main-restaurant-view',
-  templateUrl: './main-restaurant-view.component.html',
-  styleUrls: ['./main-restaurant-view.component.css']
+  selector: 'app-landing-page',
+  templateUrl: './landing-page.component.html',
+  styleUrls: ['./landing-page.component.css']
 })
-export class MainRestaurantViewComponent implements OnInit {
+export class LandingPageComponent implements OnInit {
 
   lat: Number = 10.978418;
   lng: Number = 77.109007;
-  Active_Tab = 'Menu';
+
+  circleLat: number;
+  circleLng: number;
 
   styles: any[] = [
     { 'featureType': 'administrative',           'elementType': 'labels.text.fill',   'stylers': [{ 'color': '#606269' }] },
@@ -28,12 +30,19 @@ export class MainRestaurantViewComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    if (!!window.navigator.geolocation) {
+      window.navigator.geolocation.getCurrentPosition(position => {
+          this.lat = position.coords.latitude;
+          this.lng = position.coords.longitude;
+          this.circleLat = position.coords.latitude;
+          this.circleLng = position.coords.longitude;
+      });
+    }
   }
 
-  Change_Active_Tab(Tab_Name) {
-    if (this.Active_Tab !== Tab_Name) {
-      this.Active_Tab = Tab_Name;
-    }
+  updateCircle(event) {
+    this.circleLat = event.coords.lat;
+    this.circleLng = event.coords.lng;
   }
 
 }

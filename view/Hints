@@ -1,0 +1,7 @@
+
+
+1. node_modules/@agm/snazzy-info-window/directives/snazzy-info-window.js 130
+    ""change for"" _this._nativeSnazzyInfoWindow = new elems[0](options); ""to" _this._nativeSnazzyInfoWindow = new elems[0].default(options);
+
+2. node_modules/@agm/snazzy-info-window/directives/snazzy-info-window.js 85
+    ""change for"" .then(function () { return System.import('snazzy-info-window'); }) ""to"" .then(function () { return import('snazzy-info-window'); })
