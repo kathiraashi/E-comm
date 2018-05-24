@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
-  lat: Number = 10.978418;
-  lng: Number = 77.109007;
+  lat: number;
+  lng: number;
 
   circleLat: number;
   circleLng: number;

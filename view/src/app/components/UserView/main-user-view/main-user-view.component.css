@@ -1,0 +1,286 @@
+.User_View{
+    background-color: #ebedf3;
+    width: 100%;
+    height: 100%;
+}
+.User_Info_Image_Section{
+    height: 130px;
+    width: 100%;
+    position: relative;
+    padding: 30px 0px;
+}
+.User_Info_Image_Section::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+.User_Info_Detail{
+    display: table;
+    width: 100%;
+}
+
+
+/* ----------------------------- */
+.User_Info_Detail_Left{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.User_Info_Detail_Left .Img_Section{
+    display: block;
+    width: 90px;
+    height: 100px;
+    float: left;
+}
+.User_Info_Detail_Left .Img_Section figure{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 1px;
+}
+.User_Info_Detail_Left .Img_Section figure img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.User_Info_Detail_Left .Text_Section{
+    display: block;
+    padding: 0 0 0 18px;
+    float: left;
+    width: calc(100% - 90px);
+}
+.User_Info_Detail_Left .Text_Section .Name{
+    color: #ffffff;
+}
+.User_Info_Detail_Left .Text_Section .call{
+    color: #ffffff;
+    opacity: 0.7;
+    margin: 0px;
+    display: flex;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.User_Info_Detail_Left .Text_Section .call i{
+    margin-right: 5px;
+}
+.User_Info_Detail_Left .Text_Section .email{
+    color: #ffffff;
+    opacity: 0.7;
+    margin: 0px;
+    display: flex;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.User_Info_Detail_Left .Text_Section .email i{
+    margin-right: 5px;
+}
+
+
+.User_Full_Info_Section {
+    margin-top: 35px;
+    min-height: 500px;
+}
+.User_Info_Left {
+    background-color: #ffffff;
+}
+.User_Info_Left_Tabs {
+    list-style-type: none;
+    padding: 0px;
+}
+.User_Info_Left_Tabs li {
+    display: flex;
+    padding: 10px 20px;
+    border-bottom: 1px dashed #dbdbdb;
+    cursor: pointer;
+}
+.User_Info_Left_Tabs li:last-child {
+    border-bottom: 0px;
+}
+.User_Info_Left_Tabs li.active i, 
+.User_Info_Left_Tabs li.active span{
+    color: #fd6a03;
+}
+.User_Info_Left_Tabs li:hover i, 
+.User_Info_Left_Tabs li:hover span{
+    color: #fd6a03;
+}
+.User_Info_Left_Tabs li i {
+    font-size: 21px;
+    color: #999999;
+    margin-right: 10px;
+}
+.User_Info_Left_Tabs li span {
+    color: #999999;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+.User_Info_Right {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    min-height: 342px;
+}
+.Header_Section{
+    margin-bottom: 30px;
+}
+.Order_Item {
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.Order_Item .Store_Info {
+    border-bottom: 1px solid #ebedf3;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.Order_Item .Store_Info .Store_Img_Section {
+    float: left;
+    width: 53px;
+}
+figure {
+    margin-bottom: 0;
+    position: relative;
+}
+.Order_Item .Store_Info .Store_Img_Section figure img {
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
+}
+.Order_Item .Store_Info .Text_Section {
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    padding: 5px 0 0 15px;
+    width: calc(100% - 53px);
+}
+.Order_Item .Store_Info:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+.Order_Item .Store_Info .Text_Section h6 {
+    margin: 0;
+    padding-right: 55px;
+}
+.Order_Item .Store_Info .Text_Section p {
+    font-size: 12px;
+    color: #a9aab1;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+}
+.Order_Item .Store_Info .Text_Section span.price {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    color: #067a07;
+}
+.Order_Item .Store_Info .Text_Section span.Reorder {
+    position: absolute;
+    right: 0px;
+    color: #fd6a03;
+    height: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    top: 22px;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.Order_Item .Store_Info .Text_Section span.Reorder i{
+    font-size: 15px;
+    margin-right: 3px;
+}
+.Order_Address {
+    position: relative;
+}
+.Order_Item .Order_Address span {
+    display:block;
+    color: #2f313a;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 2px;
+}
+.Order_Item .Order_Address span span{
+    color: #c1c1c1;
+    font-weight: 400;
+    display: inline-flex;
+}
+
+.Order_Item span.Order_Time {
+    color: #b3b6c0;
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: block;
+    margin-top: 10px;
+}
+.Order_Item span.Order_Time span {
+    margin-left: 10px;
+}
+
+.Order_Item .Order_Buttons p {
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+    line-height: normal;
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 5px 12px 4.3px;
+    font-size: 12px;
+    float: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fd6a03;
+    cursor: pointer;
+}
+.Order_Item .Order_Buttons .Order_Status {
+    border-radius: 3px;
+    padding: 5px 12px 5px;
+}
+.Order_Item .Order_Buttons .Order_Status.Canceled{
+    background-color: #d62525;
+}
+.Order_Item .Order_Buttons .Order_Status.Processing{
+    background-color: #1e73be;
+}
+.Order_Item .Order_Buttons .Order_Status.Completed{
+    background-color: #047a06;
+}
+.Order_Item .Order_Buttons span.Order_Status {
+    outline: none;
+    text-decoration: none;
+    line-height: normal;
+    border: 1px solid;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    float: right;
+    border-radius: 3px;
+    padding: 5px 12px 5px;
+}
+
+
+
+
+

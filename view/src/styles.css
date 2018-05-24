@@ -2,5 +2,6 @@
 
 @import './assets/OverWrite-Css/ngx-bootstarp-overwrite.css';
 @import './assets/OverWrite-Css/agm-overwrite.css';
+@import './assets/OverWrite-Css/material-overwrite.css';
 
 body { margin: 0; }

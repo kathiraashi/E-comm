@@ -1,0 +1,13 @@
+
+.mat-stepper-horizontal{
+    background-color: transparent !important;
+    font-family: unset !important;
+}
+
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+    border-color: #fd6a03 !important;
+}
+.mat-radio-button.mat-accent .mat-radio-inner-circle{
+    background-color: #fd6a03 !important;
+}

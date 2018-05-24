@@ -3,6 +3,7 @@
     height: 100%;
     width: 100%;
     position: fixed;
+    border-top: 1px solid #e0e0e0;
 }
 .Landing_Map agm-map{
     position: absolute;
@@ -21,7 +22,7 @@
 .loc_name{
     margin-bottom: 5px;
     font-size: 14px;
-    color: #27ae61;
+    color: #fd6a03;
     font-weight: 600;
 }
 .loc_name > span{
@@ -34,7 +35,7 @@
     font-size: 13px;
 }
 .order_time > span {
-    color: #27ae61;
+    color: #fd6a03;
     font-weight: 600;
 }
 .deliver_time {
@@ -42,7 +43,7 @@
     font-size: 13px;
 }
 .deliver_time > span {
-    color: #27ae61;
+    color: #fd6a03;
     font-weight: 600;
 }
 .distance {
@@ -50,7 +51,7 @@
     font-size: 13px;
 }
 .distance > span {
-    color: #27ae61;
+    color: #fd6a03;
     font-weight: 600;
 }
 

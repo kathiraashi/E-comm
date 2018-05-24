@@ -1,0 +1,523 @@
+
+
+.Cart_Page_Header{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    padding: 30px 0px;
+    background-color: #ebedf3;
+}
+.Cart_Page_Header  h3{
+    text-align: center;
+    color: #484848;
+}
+
+
+
+
+
+
+
+.Cart_Info_Section {
+    min-height: 800px;
+    background-color: #ebedf3;
+}
+.Cart_Section {
+    padding: 25px;
+    background-color: #ffffff;
+}
+table {
+    width: 100%;
+    border: 1px solid #d8d8d8;
+    background-color: #ffffff;
+}
+table thead {
+    background-color: #ecedf3;
+    border-bottom: 1px solid #d8d8d8;
+}
+table thead tr td {
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #484848;
+    text-align: center;
+}
+table thead tr td.Item {
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+}
+table thead tr td.Action {
+    width: 40px;
+}
+table tbody tr {
+    border-bottom: 1px solid #efefef;
+}
+table tbody td {
+    text-align: center;
+}
+table tbody td .Item_Section {
+    display: flex;
+    height: 90px;
+    padding: 10px 20px;
+    align-items: center;
+    text-align: left;
+}
+table tbody td .Item_Section .Img_Section {
+    width: 70px;
+    height: 70px;
+}
+table tbody td .Item_Section .Img_Section img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+table tbody td .Item_Section .Text_Section {
+    height: 80px;
+    margin-left: 15px;
+}
+table tbody td .Item_Section .Text_Section p.Food_Name {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px;
+}
+table tbody td .Item_Section .Text_Section p.Rest_Name {
+    font-size: 14px;
+    color: #999999;
+    margin: 0px;
+}
+table tbody td .Item_Section .Text_Section p.Delivery_Info {
+    font-size: 14px;
+    color: #999999;
+    margin: 0px;
+}
+table tbody td .Quantity_Section {
+    display: inline-flex;
+    text-align: center;
+}
+table tbody td .Quantity_Section i {
+    padding: 0px 10px;
+    color: #999999;
+    font-size: 26px;
+    cursor: pointer;
+}
+table tbody td .Quantity_Section span {
+    font-weight: 600;
+    font-size: 16px;
+}
+table tbody td .Unit_Price_Section {
+    font-weight: 700;
+    color: #757575;
+    font-size: 15px;
+}
+table tbody td .Total_Price_Section {
+    font-weight: 700;
+    color: #757575;
+    font-size: 15px;
+}
+table tbody td .Remove_Item i {
+    color: #F44336;
+    cursor: pointer;
+}
+table tfoot tr td {
+    text-align: right;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #484848;
+}
+table tfoot tr td:last-child {
+    text-align: center;
+    padding-right: 50px;
+    font-weight: 700;
+}
+tfoot tr:last-child {
+    border-top: 1px dashed #d8d8d8;
+}
+.Cart_Section button {
+    border: 1px solid #fd6a03;
+    text-align: center;
+    padding: 5px 15px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.8px;
+    background-color: #fd6a03;
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Pickup_Section .Pickup_Section_left .Pickup_Form {
+    padding: 25px;
+    background: #fff;
+}
+.Pickup_Section .Pickup_Section_left .Pickup_Form .Form_Field{
+    margin-bottom: 20px;
+}
+.Pickup_Section .Pickup_Section_left .Pickup_Form .Form_Field label {
+    color: #c7c7c7;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+}
+.Pickup_Section .Pickup_Section_left .Pickup_Form .Form_Field input {
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #333333;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    width: 100%;
+    font-weight: 500;
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    outline: none;
+}
+.Pickup_Section .Pickup_Section_left .Pickup_Form .Form_Field textarea {
+    outline: none;
+    height: 127px;
+    border-radius: 3px;
+    padding-top: 10px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #333333;
+    border: 1px solid #e8e8e8;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0 15px;
+    width: 100%;
+    font-weight: 500;
+}
+.Pickup_Section .Pickup_Section_left .Pickup_Form .Form_Field input:-moz-placeholder{
+    color: #a4a4a4;
+}
+.Pickup_Section .Pickup_Section_left .Pickup_Form .Form_Field input:-ms-input-placeholder{
+    color: #a4a4a4;
+}
+.Pickup_Section .Pickup_Section_left .Pickup_Form .Form_Field input::-moz-placeholder{
+    color: #a4a4a4;
+}
+.Pickup_Section .Pickup_Section_left .Pickup_Form .Form_Field input::-webkit-input-placeholder{
+    color: #a4a4a4;
+}
+
+.Back_Btn{
+    border: 1px solid #ecedf3;
+    text-align: center;
+    padding: 5px 15px;
+    font-weight: 700;
+    color: #484848;
+    letter-spacing: 0.8px;
+    background-color: #ecedf3;
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+.Next_Btn{
+    border: 1px solid #fd6a03;
+    text-align: center;
+    padding: 5px 15px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.8px;
+    background-color: #fd6a03;
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+
+.Payment_Section{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+}
+.Payment_Section .Payment_Tabs .Online_Tab{
+    width: 100%;
+}
+.Payment_Section .Payment_Tabs .Online_Tab .Tab_Header{
+    padding: 7px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #ecedf3;
+    letter-spacing: 0.4px;
+    color: #656565;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.Payment_Section .Payment_Tabs .Online_Tab .Tab_Footer{
+    padding: 15px 20px;
+}
+
+.Payment_Section .Payment_Tabs .Online_Tab .Tab_Contents ul.Online_Types {
+    list-style-type: none;
+    padding-left: 20px;
+}
+.Payment_Section .Payment_Tabs .Online_Tab .Tab_Contents ul.Online_Types li p{
+    color: #888888;
+    margin: 0px;
+    padding: 10px 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border-bottom: 1px dashed #dcdcdc;
+}
+.Payment_Section .Payment_Tabs .Online_Tab .Tab_Contents ul.Online_Types li p:hover,
+.Payment_Section .Payment_Tabs .Online_Tab .Tab_Contents ul.Online_Types li p.active{
+    color: #fd6a03;
+}
+
+
+
+.Online_Types_Content {
+    border: 1px solid #e8e8e8;
+}
+.Card_Section {
+    padding: 30px 20px;
+}
+.Card_Section ul {
+    list-style-type: none;
+    padding: 0px;
+}
+.New_Card_Header{
+    border-bottom: 1px dashed #999999;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.Card_Section .New_Card {
+    padding-right: 20px;
+    padding-left: 10px;
+}
+.Card_Section .New_Card input {
+    width: 100%;
+    padding: 0px 10px;
+    height: 35px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #d6d6d6;
+}
+.Card_Section .New_Card button {
+    margin: 0px;
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #656565;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #656565;
+    border-radius: 3px;
+    outline: none;
+}
+
+.Card_Section .Saved_Cards_Header{
+    border-bottom: 1px dashed #999999;
+    margin: 0px;
+}
+.Card_Section .Saved_Card {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 0px;
+    padding-left: 10px;
+}
+.Card_Section .Saved_Card .Display_Name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #484848;
+    margin: 0px;
+    padding-right: 20px;
+}
+.Card_Section .Saved_Card .Card_Type {
+    height: 20px;
+    padding-right: 15px;
+}
+.Card_Section .Saved_Card .Card_Type img {
+    height: 20px;
+    border: 1px solid #d2d1d1;
+    padding: 2px;
+}
+.Card_Section .Saved_Card .Card-No {
+    font-size: 15px;
+    font-weight: 600;
+    color: #c1c1c1;
+    margin: 0px;
+    padding-right: 20px;
+}
+.Saved_Card input {
+    width: 130px;
+    margin-right: 20px;
+    padding: 0px 4px;
+    font-size: 14px;
+    height: 32px;
+    outline: none;
+    border: 1px solid #dcdcdc;
+}
+.Card_Section .Saved_Card button {
+    margin: 0px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #656565;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #656565;
+    border-radius: 3px;
+    line-height: 30px;
+    padding: 0px 10px;
+    outline: none;
+}
+.Card_Section input:-moz-placeholder{
+    color: #c3c3c3;
+}
+.Card_Section input::-moz-placeholder{
+    color: #c3c3c3;
+}
+.Card_Section input::-webkit-input-placeholder{
+    color: #c3c3c3;
+}
+.Card_Section input:-ms-input-placeholder{
+    color: #c3c3c3;
+}
+
+
+
+.Net_Banking_Section {
+    padding: 30px 20px;
+}
+.Net_Banking_Section .Popular_Banks_Header{
+    border-bottom: 1px dashed #999999;
+    margin: 0px;
+    width: 50%;
+}
+mat-radio-group{
+    display: inline-block;
+    width: 100%;
+    padding: 15px 10px;
+}
+mat-radio-group mat-radio-button{
+    width: 33.3%;
+    padding: 10px 0px;
+    font-size: 14px;
+    color: #484848;
+}
+
+.Net_Banking_Section .Other_Banks_Header{
+    border-bottom: 1px dashed #999999;
+    margin: 0px;
+    width: 50%;
+}
+.Net_Banking_Section .Other_Banks_Section{
+    padding-top: 30px;
+}
+.Net_Banking_Section .Other_Banks_Section select{
+    width: 100%;
+    padding: 5px 10px;
+    outline: none;
+}
+.Net_Banking_Section button{
+    margin: 0px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #656565;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #656565;
+    border-radius: 2px;
+    line-height: 30px;
+    padding: 2px 15px;
+    outline: none;
+}
+
+ .Payment_Tabs .Footer_Section{
+    padding: 10px 20px 0px 20px;
+    margin-top: 15px;
+}
+
+
+
+.Paypal_Section{
+    padding: 30px 20px;
+}
+.Paypal_Section h6 {
+    color: #484848;
+    margin-bottom: 30px;
+}
+.Paypal_Section button{
+    margin: 0px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #656565;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #656565;
+    border-radius: 2px;
+    line-height: 30px;
+    padding: 2px 15px;
+    outline: none;
+}
+
+
+.Success_Section{
+    width: 100%;
+    min-height: 400px;
+    background-color: #ffffff;
+}
+.Success_Section h1 {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 50px;
+}
+.Success_Section h6 {
+    text-align: center;
+    color: #777777;
+}
+.Success_Section div {
+    text-align: center;
+    margin: 30px 0px;
+}
+.Success_Section i {
+    font-size: 150px;
+    font-weight: 100;
+    color: #fd6a03;
+}
+.Success_Section p {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    color: #999;
+}
+.Success_Section button {
+    text-align: center;
+    margin-bottom: 30px;
+    border: 1px solid #fd6a03;
+    background-color: #ffffff;
+    padding: 3px 10px;
+    font-size: 17px;
+    color: #fd6a03;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}

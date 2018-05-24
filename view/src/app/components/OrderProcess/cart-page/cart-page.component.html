@@ -1,0 +1,328 @@
+<app-main-header></app-main-header>
+
+  <!-- Cart Info Header Section -->
+  <div class="Cart_Page_Header">
+    <h3 class="Name"> Order Process </h3>
+  </div>
+
+
+  <div class="Cart_Info_Section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <mat-horizontal-stepper>
+            <!-- Step One Your Cart -->
+            <mat-step>
+                <ng-template matStepLabel>Your Cart</ng-template>
+                <div  class="Cart_Section">
+                  <table>
+                    <thead>
+                      <tr>
+                        <td class="Item"> Item </td>
+                        <td class="Quantity"> Quantity </td>
+                        <td class="Unit_Price"> Unite Price </td>
+                        <td class="Total_Price"> Total Price </td>
+                        <td class="Action"></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="Item_Section">
+                            <div class="Img_Section">
+                              <img src="assets/Images/demo/photo01.jpg" alt="">
+                            </div>
+                            <div class="Text_Section">
+                              <p class="Food_Name"> Name of the Food </p>
+                              <p class="Rest_Name"> Restaurant Name </p>
+                              <p class="Delivery_Info">
+                                Pickup Time : <span> 2.30pm</span>
+                              </p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="Quantity_Section">
+                            <i class="material-icons">remove_circle</i>
+                            <span class="Quantity_Count"> 1 </span>
+                            <i class="material-icons">add_circle</i>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="Unit_Price_Section"> $ 4.50</div>
+                        </td>
+                        <td>
+                          <div class="Total_Price_Section"> $ 4.50</div>
+                        </td>
+                        <td>
+                          <div class="Remove_Item"><i class="material-icons">delete</i></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="Item_Section">
+                            <div class="Img_Section">
+                              <img src="assets/Images/demo/photo01.jpg" alt="">
+                            </div>
+                            <div class="Text_Section">
+                              <p class="Food_Name"> Name of the Food </p>
+                              <p class="Rest_Name"> Restaurant Name </p>
+                              <p class="Delivery_Info">
+                                Pickup Time : <span> 2.30pm</span>
+                              </p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="Quantity_Section">
+                              <i class="material-icons">remove_circle</i>
+                              <span class="Quantity_Count"> 2 </span>
+                              <i class="material-icons">add_circle</i>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="Unit_Price_Section"> $ 4.50</div>
+                        </td>
+                        <td>
+                          <div class="Total_Price_Section"> $ 9.00</div>
+                        </td>
+                        <td>
+                          <div class="Remove_Item"><i class="material-icons">delete</i></div>
+                        </td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td></td>
+                        <td class="Sub_Total" colspan="2"> Sub Total :</td>
+                        <td class="Sub_Total_amt" colspan="2"> $13.50 </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="Delivery_Fee" colspan="2"> Delivery Fee :</td>
+                        <td class="Delivery_Fee_amt" colspan="2"> $1.50 </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="Tax" colspan="2"> Tax (5%) :</td>
+                        <td class="Tax_amt" colspan="2"> $0.065 </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="Total" colspan="2"> Total :</td>
+                        <td class="Total_amt" colspan="2"> $15.065 </td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <br>
+                  <div class="row">
+                    <div class="col-sm-12 text-right">
+                        <button mat-button matStepperNext> Next </button>
+                    </div>
+                  </div>
+                </div>
+            </mat-step>
+            <mat-step>
+              <ng-template matStepLabel>Pickup</ng-template>
+              <div class="row Pickup_Section">
+                <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="Pickup_Section_left">
+                    <form class="Pickup_Form">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                          <div class="Form_Field">
+                            <label>First Name</label>
+                            <input type="text" placeholder="First Name" >
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                          <div class="Form_Field">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Last Name">
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                          <div class="Form_Field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Email" >
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                          <div class="Form_Field">
+                            <label>Phone Number</label>
+                            <input type="text" placeholder="Phone Number">
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                          <div class="Form_Field">
+                            <label>Address</label>
+                            <textarea readonly> Already Selected Pickup Location is Show, Not Editable</textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6 col-xs-12 text-left">
+                          <button class="Back_Btn" mat-button matStepperPrevious> Back </button>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 text-right">
+                          <button class="Next_Btn" mat-button matStepperNext> Next </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </mat-step>
+
+            <mat-step>
+              <ng-template matStepLabel>Payment Process</ng-template>
+              <div class="Payment_Section">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="Payment_Tabs">
+                      <div class="Online_Tab">
+                        <div class="Tab_Header">
+                            Pay at Online
+                        </div>
+                        <div class="Tab_Contents">
+                          <div class="row">
+                            <div class="col-sm-3">
+                              <ul class="Online_Types">
+                                <li> <p [ngClass]="{'active': Active_Tab === 'Cart'}" (click)="Change_Active_Tab('Cart')" > Card </p> </li>
+                                <li> <p [ngClass]="{'active': Active_Tab === 'Net_Banking'}" (click)="Change_Active_Tab('Net_Banking')"> Net Banking</p> </li>
+                                <li> <p [ngClass]="{'active': Active_Tab === 'Paypal'}" (click)="Change_Active_Tab('Paypal')"> Paypal </p> </li>
+                              </ul>
+                            </div>
+                            <div class="col-sm-9">
+                              <div class="Online_Types_Content">
+                                <div class="Card_Section" *ngIf="Active_Tab === 'Cart'">
+                                  <ul>
+                                    <li><h5 class="Saved_Cards_Header"> Saved Cards </h5></li>
+                                    <li>
+                                      <div class="Saved_Card">
+                                        <p class="Display_Name">1) Card Name</p>
+                                        <div class="Card_Type">
+                                          <img src="assets/Images/basic/visa.png" alt="">
+                                        </div>
+                                        <p class="Card-No"> 00XX XXXX XXXX 9876 </p>
+                                        <input type="text" placeholder="CVV">
+                                        <button> Continue </button>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="Saved_Card">
+                                        <p class="Display_Name">2) Card Name</p>
+                                        <div class="Card_Type">
+                                          <img src="assets/Images/basic/MasterCard.png" alt="">
+                                        </div>
+                                        <p class="Card-No"> 00XX XXXX XXXX 9876 </p>
+                                        <input type="text" placeholder="CVV">
+                                        <button> Continue </button>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <h5 class="New_Card_Header">Add New Card </h5>
+                                      <div class="New_Card">
+                                        <div class="row">
+                                          <div class="col-sm-6">
+                                            <input type="text" placeholder="Display Card Name">
+                                          </div>
+                                          <div class="col-sm-6">
+                                            <input type="text" placeholder="Card Number">
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-sm-4">
+                                            <input type="text" placeholder="Expiry Month and Year">
+                                          </div>
+                                          <div class="col-sm-4">
+                                            <input type="text" placeholder="CVV">
+                                          </div>
+                                          <div class="col-sm-4">
+                                            <button> Save and Continue </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="Net_Banking_Section" *ngIf="Active_Tab === 'Net_Banking'">
+                                  <h5 class="Popular_Banks_Header"> Popular Banks </h5>
+                                  <div class="Popular_Banks_Header_Section">
+                                    <mat-radio-group>
+                                      <mat-radio-button value="1"> HDFC Bank </mat-radio-button>
+                                      <mat-radio-button value="2"> ICICI Bank </mat-radio-button>
+                                      <mat-radio-button value="3"> State Bank of India </mat-radio-button>
+                                      <mat-radio-button value="4"> Axis Bank </mat-radio-button>
+                                      <mat-radio-button value="5"> Kotak Bank </mat-radio-button>
+                                      <mat-radio-button value="6"> RBL Bank </mat-radio-button>
+                                    </mat-radio-group>
+                                  </div>
+
+                                  <h5 class="Other_Banks_Header"> Other Banks </h5>
+                                  <div class="Other_Banks_Section">
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <select>
+                                          <option value=""> ---Select Bank--- </option>
+                                          <option value="">Bank of Baroda</option>
+                                          <option value="">Bank of India</option>
+                                          <option value="">Canara Bank</option>
+                                          <option value="">Central Bank</option>
+                                          <option value="">City Union Bank</option>
+                                          <option value="">Indian Bank</option>
+                                          <option value="">Indian Overseas Bank</option>
+                                          <option value="">Karur Vysya Bank</option>
+                                          <option value="">The South Indian Bank</option>
+                                          <option value="">Syndicate Bank</option>
+                                        </select>
+                                      </div>
+                                      <div class="col-sm-6 text-right">
+                                        <button> Continue </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="Paypal_Section" *ngIf="Active_Tab === 'Paypal'">
+                                  <h6>
+                                      You'll be redirected to Paypal page, where you can pay using Paypal, Credit/Debit card or Wallet
+                                  </h6>
+                                  <button> Continue </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="Footer_Section">
+                          <div class="row">
+                            <div class="col-sm-6 col-xs-12 text-left">
+                              <button class="Back_Btn" mat-button matStepperPrevious> Back </button>
+                            </div>
+                            <div class="col-sm-6 col-xs-12 text-right">
+                              <button class="Next_Btn" mat-button matStepperNext> Next </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </mat-step>
+            <mat-step>
+              <ng-template matStepLabel>Done</ng-template>
+              <div class="Success_Section ng-star-inserted">
+                <h1>Thank You!</h1>
+                <h6> for Choosing This Site.</h6>
+                <div> <i class="material-icons">check_circle_outline</i> </div>
+                <p> we have just sent to your Email a latter with complete <br> information about your Order </p>
+                <div>
+                  <button> Homepage</button>
+                </div>
+              </div>
+            </mat-step>
+          </mat-horizontal-stepper>
+        </div>
+      </div>
+    </div>
+  </div>

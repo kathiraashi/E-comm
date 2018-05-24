@@ -1,27 +1,110 @@
 <app-main-header></app-main-header>
 
-<div class="Landing_Map">
+<div class="Landing_Map" *ngIf="lat > 0 && lng > 0">
   <agm-map [latitude]="lat" [zoom]="17" [longitude]="lng" [styles]= "styles">
     <agm-circle [latitude]="circleLat" [longitude]="circleLng" [radius]="80" [fillColor]="'#FA601F'" ></agm-circle>
     <agm-circle [latitude]="circleLat" [longitude]="circleLng" [radius]="120" [fillColor]="'#FA601F'"></agm-circle>
 
-    <agm-marker [latitude]="circleLat" [longitude]="circleLng" [markerDraggable]="true" (dragEnd)="updateCircle($event)" >
+    <agm-marker [latitude]="circleLat" [longitude]="circleLng" [openInfoWindow]="true" [markerDraggable]="true" (dragEnd)="updateCircle($event)" >
       <agm-snazzy-info-window [maxWidth]="200" [closeWhenOthersOpen]="true">
         <ng-template>
             <div class="marker_info">
-              <p class="user_location"> Your Location </p>
+              <p class="user_location"> We will find your location, Else to Drag this Pointer to your Exact Location </p>
             </div>
         </ng-template>
       </agm-snazzy-info-window>
     </agm-marker>
 
-    <agm-marker [latitude]="11.045477" [longitude]="76.9757776" >
+    <agm-marker [latitude]="lat + .003" [longitude]="lng" >
       <agm-snazzy-info-window [maxWidth]="200" [placement]="'left'" [closeWhenOthersOpen]="true">
         <ng-template>
           <div class="marker_info">
-            <p class="loc_name"> Gril In <span> ( Ganapathy )</span> </p>
+            <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
             <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
-            <p class="deliver_time"> Deliverd at <span> 4 pm </span>  </p>
+            <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
+            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span></p>
+          </div>
+        </ng-template>
+      </agm-snazzy-info-window>
+    </agm-marker>
+
+    <agm-marker [latitude]="lat" [longitude]="lng + .003" >
+      <agm-snazzy-info-window [maxWidth]="200" [placement]="'left'" [closeWhenOthersOpen]="true">
+        <ng-template>
+          <div class="marker_info">
+            <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
+            <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
+            <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
+            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span></p>
+          </div>
+        </ng-template>
+      </agm-snazzy-info-window>
+    </agm-marker>
+
+    
+    <agm-marker [latitude]="lat + .002" [longitude]="lng + .002" >
+      <agm-snazzy-info-window [maxWidth]="200" [placement]="'left'" [closeWhenOthersOpen]="true">
+        <ng-template>
+          <div class="marker_info">
+            <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
+            <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
+            <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
+            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span></p>
+          </div>
+        </ng-template>
+      </agm-snazzy-info-window>
+    </agm-marker>
+
+    <agm-marker [latitude]="lat - .002" [longitude]="lng - .002" >
+      <agm-snazzy-info-window [maxWidth]="200" [placement]="'left'" [closeWhenOthersOpen]="true">
+        <ng-template>
+          <div class="marker_info">
+            <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
+            <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
+            <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
+            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span></p>
+          </div>
+        </ng-template>
+      </agm-snazzy-info-window>
+    </agm-marker>
+
+
+
+    <agm-marker [latitude]="lat - .003" [longitude]="lng - .005" >
+      <agm-snazzy-info-window [maxWidth]="200" [placement]="'left'" [closeWhenOthersOpen]="true">
+        <ng-template>
+          <div class="marker_info">
+            <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
+            <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
+            <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
+            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span></p>
+          </div>
+        </ng-template>
+      </agm-snazzy-info-window>
+    </agm-marker>
+
+
+    <agm-marker [latitude]="lat + .001" [longitude]="lng - .006" >
+      <agm-snazzy-info-window [maxWidth]="200" [placement]="'left'" [closeWhenOthersOpen]="true">
+        <ng-template>
+          <div class="marker_info">
+            <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
+            <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
+            <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
+            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span></p>
+          </div>
+        </ng-template>
+      </agm-snazzy-info-window>
+    </agm-marker>
+
+
+    <agm-marker [latitude]="lat + .002" [longitude]="lng - .004" >
+      <agm-snazzy-info-window [maxWidth]="200" [placement]="'left'" [closeWhenOthersOpen]="true">
+        <ng-template>
+          <div class="marker_info">
+            <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
+            <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
+            <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
             <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span></p>
           </div>
         </ng-template>
