@@ -7,7 +7,7 @@
     height: 130px;
     width: 100%;
     position: relative;
-    padding: 30px 0px;
+    padding: 20px 0px;
 }
 .User_Info_Image_Section::before{
     content: '';
@@ -23,9 +23,6 @@
     display: table;
     width: 100%;
 }
-
-
-/* ----------------------------- */
 .User_Info_Detail_Left{
     display: table-cell;
     vertical-align: middle;
@@ -58,6 +55,7 @@
 }
 .User_Info_Detail_Left .Text_Section .Name{
     color: #ffffff;
+    line-height: 25px;
 }
 .User_Info_Detail_Left .Text_Section .call{
     color: #ffffff;
@@ -81,6 +79,12 @@
 .User_Info_Detail_Left .Text_Section .email i{
     margin-right: 5px;
 }
+
+
+
+
+
+
 
 
 .User_Full_Info_Section {
@@ -134,57 +138,65 @@
     background-color: #ffffff;
     min-height: 342px;
 }
-.Header_Section{
+
+
+
+
+
+
+
+
+.Tab_Content_1 .Header_Section{
     margin-bottom: 30px;
 }
-.Order_Item {
+.Tab_Content_1 .Order_Item {
     border: 1px solid #e4e4e4;
     border-radius: 3px;
     padding: 20px;
     margin-bottom: 30px;
 }
-.Order_Item .Store_Info {
+.Tab_Content_1 .Order_Item .Store_Info {
     border-bottom: 1px solid #ebedf3;
     padding-bottom: 15px;
     margin-bottom: 15px;
 }
-.Order_Item .Store_Info .Store_Img_Section {
+.Tab_Content_1 .Order_Item .Store_Info .Store_Img_Section {
     float: left;
     width: 53px;
 }
-figure {
+.Tab_Content_1 figure {
     margin-bottom: 0;
     position: relative;
 }
-.Order_Item .Store_Info .Store_Img_Section figure img {
+.Tab_Content_1 .Order_Item .Store_Info .Store_Img_Section figure img {
     border-radius: 50%;
     width: 53px;
     height: 53px;
 }
-.Order_Item .Store_Info .Text_Section {
+.Tab_Content_1 .Order_Item .Store_Info .Text_Section {
     text-align: left;
     overflow: hidden;
     position: relative;
     padding: 5px 0 0 15px;
     width: calc(100% - 53px);
 }
-.Order_Item .Store_Info:after {
+.Tab_Content_1 .Order_Item .Store_Info:after {
     display: block;
     clear: both;
     content: '';
 }
-.Order_Item .Store_Info .Text_Section h6 {
+.Tab_Content_1 .Order_Item .Store_Info .Text_Section h6 {
     margin: 0;
     padding-right: 55px;
 }
-.Order_Item .Store_Info .Text_Section p {
+.Tab_Content_1 .Order_Item .Store_Info .Text_Section p {
     font-size: 12px;
     color: #a9aab1;
     text-transform: uppercase;
     margin: 0;
     display: inline-block;
 }
-.Order_Item .Store_Info .Text_Section span.price {
+.Tab_Content_1 .Order_Item .Store_Info .Text_Section span.price {
     position: absolute;
     top: 4px;
     right: 0;
@@ -193,27 +205,27 @@ figure {
     display: inline-block;
     color: #067a07;
 }
-.Order_Item .Store_Info .Text_Section span.Reorder {
+.Tab_Content_1 .Order_Item .Store_Info .Text_Section span.Reorder {
     position: absolute;
     right: 0px;
     color: #fd6a03;
     height: 30px;
     font-weight: 600;
     font-size: 14px;
-    top: 22px;
+    top: 25px;
     letter-spacing: 0.4px;
     cursor: pointer;
     display: flex;
     align-items: center;
 }
-.Order_Item .Store_Info .Text_Section span.Reorder i{
+.Tab_Content_1 .Order_Item .Store_Info .Text_Section span.Reorder i{
     font-size: 15px;
     margin-right: 3px;
 }
-.Order_Address {
+.Tab_Content_1 .Order_Address {
     position: relative;
 }
-.Order_Item .Order_Address span {
+.Tab_Content_1 .Order_Item .Order_Address span {
     display:block;
     color: #2f313a;
     font-size: 14px;
@@ -221,24 +233,22 @@ figure {
     line-height: normal;
     margin-bottom: 2px;
 }
-.Order_Item .Order_Address span span{
+.Tab_Content_1 .Order_Item .Order_Address span span{
     color: #c1c1c1;
     font-weight: 400;
     display: inline-flex;
 }
-
-.Order_Item span.Order_Time {
+.Tab_Content_1 .Order_Item span.Order_Time {
     color: #b3b6c0;
     font-size: 14px;
     margin-bottom: 15px;
     display: block;
     margin-top: 10px;
 }
-.Order_Item span.Order_Time span {
+.Tab_Content_1 .Order_Item span.Order_Time span {
     margin-left: 10px;
 }
-
-.Order_Item .Order_Buttons p {
+.Tab_Content_1 .Order_Item .Order_Buttons p {
     display: inline-block;
     outline: none;
     text-decoration: none;
@@ -253,20 +263,20 @@ figure {
     color: #fd6a03;
     cursor: pointer;
 }
-.Order_Item .Order_Buttons .Order_Status {
+.Tab_Content_1 .Order_Item .Order_Buttons .Order_Status {
     border-radius: 3px;
     padding: 5px 12px 5px;
 }
-.Order_Item .Order_Buttons .Order_Status.Canceled{
+.Tab_Content_1 .Order_Item .Order_Buttons .Order_Status.Canceled{
     background-color: #d62525;
 }
-.Order_Item .Order_Buttons .Order_Status.Processing{
+.Tab_Content_1 .Order_Item .Order_Buttons .Order_Status.Processing{
     background-color: #1e73be;
 }
-.Order_Item .Order_Buttons .Order_Status.Completed{
+.Tab_Content_1 .Order_Item .Order_Buttons .Order_Status.Completed{
     background-color: #047a06;
 }
-.Order_Item .Order_Buttons span.Order_Status {
+.Tab_Content_1 .Order_Item .Order_Buttons span.Order_Status {
     outline: none;
     text-decoration: none;
     line-height: normal;
@@ -284,3 +294,117 @@ figure {
 
 
 
+
+.Tab_Content_3 .Review_Section .Reviews_Header {
+    display: table;
+    width: 100%;
+}
+.Tab_Content_3 .Review_Section .Reviews_Header h5 {
+    display: table-cell;
+    vertical-align: middle;
+}
+.Tab_Content_3 .Review_Section .Reviews_Header .Reviews_Short_Div {
+    vertical-align: middle;
+    display: table-cell;
+    width: 150px;
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+.Tab_Content_3 .Review_Section .Reviews_Header .Reviews_Short_Div p {
+    margin: 0px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    padding: 3px 0px;
+    color: #999999;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.Tab_Content_3 .Review_Section .Reviews_Header .Reviews_Short_Div p i{
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+.Tab_Content_3 .Review_Section .Reviews_Header .Reviews_Short_Div .Reviews_Short_list {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+    position: absolute;
+    list-style-type: none;
+    padding: 0px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    z-index: 1;
+}
+.Tab_Content_3 .Review_Section .Reviews_Header .Reviews_Short_Div:hover .Reviews_Short_list {
+    max-height: 500px !important;
+    opacity: 1 !important;
+    transition: max-height 0.55s ease-in,  opacity 0.05s ease-in, !important;
+}
+.Tab_Content_3 .Review_Section .Reviews_Header .Reviews_Short_Div .Reviews_Short_list li{
+    border-bottom: 1px solid #cdcdcd75;
+    text-align: center;
+    font-size: 14px;
+    padding: 3px 0px;
+    color: #999999;
+}
+.Tab_Content_3 .Review_Section .Reviews_Header .Reviews_Short_Div .Reviews_Short_list li:hover{
+    color: #ff981a;
+}
+
+.Tab_Content_3 .Review_Section .Reviews_List {
+    margin-top: 20px;
+}
+.Tab_Content_3 .Review_Section .Reviews_List .Reviews_Item {
+    position: relative;
+    width: 100%;
+}
+.Tab_Content_3 .Review_Section .Reviews_List .Reviews_Item .Restaurant_Info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.Tab_Content_3 .Review_Section .Reviews_List .Reviews_Item .Restaurant_Info p {
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #616161;
+    margin-right: 10px;
+}
+.Tab_Content_3 .Review_Section .Reviews_List .Reviews_Item .Restaurant_Info span {
+    color: #999999ad;
+    font-size: 13px;
+    font-weight: 600;
+}
+.Tab_Content_3 .Review_Section .Reviews_List .Reviews_Item .Rating_Info {
+    display: flex;
+    margin-left: 15px;
+}
+.Tab_Content_3 .Review_Section .Reviews_List .Reviews_Item .Rating_Info .Rating_Count {
+    color: #616161;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.Tab_Content_3 .Review_Section .Reviews_List .Reviews_Item .Rating_Info .Stars_Group_3 i {
+    color: #999999;
+    font-size: 21px;
+}
+.Tab_Content_3 .Review_Section .Reviews_List .Reviews_Item .Rating_Info .Stars_Group_3 i.colored {
+    color: #ff981b;
+}
+.Tab_Content_3 .Review_Section .Reviews_List .Reviews_Item .Review_Text {
+    margin-left: 15px;
+    margin-top: -5px;
+}
+.Tab_Content_3 .Review_Section .Reviews_List .Reviews_Item .Review_Text p{
+    font-size: 14px;
+    color: #999999;
+}

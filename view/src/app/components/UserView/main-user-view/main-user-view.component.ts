@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainUserViewComponent implements OnInit {
 
+  Active_Tab = 'My_Orders';
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  Change_Active_Tab(Tab_Value) {
+    if (this.Active_Tab !== Tab_Value) {
+      this.Active_Tab = Tab_Value;
+    }
   }
 
 }

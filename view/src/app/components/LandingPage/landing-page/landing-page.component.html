@@ -2,8 +2,9 @@
 
 <div class="Landing_Map" *ngIf="lat > 0 && lng > 0">
   <agm-map [latitude]="lat" [zoom]="17" [longitude]="lng" [styles]= "styles">
-    <agm-circle [latitude]="circleLat" [longitude]="circleLng" [radius]="80" [fillColor]="'#FA601F'" ></agm-circle>
-    <agm-circle [latitude]="circleLat" [longitude]="circleLng" [radius]="120" [fillColor]="'#FA601F'"></agm-circle>
+    <agm-circle [latitude]="circleLat" [longitude]="circleLng" [radius]="100" [fillColor]="'#FA601F'" ></agm-circle>
+    <agm-circle [latitude]="circleLat" [longitude]="circleLng" [radius]="200" [fillColor]="'#FA601F'"></agm-circle>
+    <agm-circle [latitude]="circleLat" [longitude]="circleLng" [radius]="400" [fillColor]="'#FA601F'"></agm-circle>
 
     <agm-marker [latitude]="circleLat" [longitude]="circleLng" [openInfoWindow]="true" [markerDraggable]="true" (dragEnd)="updateCircle($event)" >
       <agm-snazzy-info-window [maxWidth]="200" [closeWhenOthersOpen]="true">
