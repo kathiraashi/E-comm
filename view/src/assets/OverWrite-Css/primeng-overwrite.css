@@ -1,0 +1,19 @@
+
+.ui-slider .ui-slider-handle{
+    background-color: #fd6a03;
+    border-radius: 20px;
+    background-image: none;
+    height: 17px !important;
+    width: 17px !important;
+    box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.6);
+}
+
+.ui-slider .ui-slider-range{
+    background-color: rgba(253, 106, 3, 0.45);
+    box-shadow: none;
+}
+.ui-slider {
+    background: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.6) !important;
+}

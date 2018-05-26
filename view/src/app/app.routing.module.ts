@@ -6,10 +6,11 @@ import { MainRestaurantViewComponent } from './components/restaurant-view/main-r
 import { LandingPageComponent } from './components/LandingPage/landing-page/landing-page.component';
 import { MainUserViewComponent } from './components/UserView/main-user-view/main-user-view.component';
 import { CartPageComponent } from './components/OrderProcess/cart-page/cart-page.component';
+import { MainRestaurantListComponent } from './components/restaurant-list/main-restaurant-list/main-restaurant-list.component';
 
 const appRoutes: Routes = [
     { path: '',
-        component: MainRestaurantViewComponent,
+        component: LandingPageComponent,
         data: { animation: { value: 'Restaurant_View', } }
     },
     { path: 'Landing_Page',
@@ -19,6 +20,10 @@ const appRoutes: Routes = [
     { path: 'Restaurant_View',
         component: MainRestaurantViewComponent,
         data: { animation: { value: 'Restaurant_View', } }
+    },
+    { path: 'Restaurant_List',
+        component: MainRestaurantListComponent,
+        data: { animation: { value: 'Restaurant_List', } }
     },
     { path: 'User_View',
         component: MainUserViewComponent,

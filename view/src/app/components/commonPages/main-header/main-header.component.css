@@ -10,6 +10,8 @@
 }
 .Header_Left > img{
     height: 36px;
+    cursor: pointer;
+    outline: none;
 }
 .Header_Left .Dropdown_1 {
     margin: 0px 15px;
@@ -116,6 +118,24 @@
 }
 .Header_Right .Vendor_Button:hover {
     background-color: #fd6a03;
+}
+
+.Header_Right.Logged_In {
+    cursor: pointer;
+    height: 60px;
+    align-items: center;
+}
+.Header_Right.Logged_In img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.Header_Right.Logged_In p {
+    margin: 0px;
+    margin-left: 10px;
+    font-weight: 600;
+    color: #484848;
+    font-size: 17px;
 }
 
 

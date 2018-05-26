@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-sm-6">
         <div class="Header_Left">
-          <img class="Logo" src="assets/Images/basic/E-commLogo.png" alt="" >
+          <img [routerLink]="['/']" class="Logo" src="assets/Images/basic/E-commLogo.png" alt="" >
           <div class="Dropdown_1">
             <P> <i class="material-icons">fastfood</i> <span> Feel Like Eating </span> <i class="material-icons">arrow_drop_down</i> </P>
             <ul class="Dropdown_1_List">
@@ -40,10 +40,16 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6" *ngIf="Active_Page !== 'User_View'">
         <div class="Header_Right">
           <p class="User_Button" (click)="openModal(template)"> Login / Register</p>
-          <p class="Vendor_Button"> Register Restaurant </p>
+          <!-- <p class="Vendor_Button"> Register Restaurant </p> -->
+        </div>
+      </div>
+      <div class="col-sm-6" *ngIf="Active_Page === 'User_View'">
+        <div class="Header_Right Logged_In">
+          <img src="assets/Images/basic/photo.png" alt="">
+          <p> User Name </p>
         </div>
       </div>
   </div>
@@ -69,7 +75,7 @@
       <input type="password" placeholder="Password">
     </div>
     <p class="Forgot_pwd"> Forgot Password? </p>
-    <p class="Submit_Btn"> LOG IN </p>
+    <p [routerLink]="['/User_View']"  (click)="modalRef.hide()" class="Submit_Btn"> LOG IN </p>
     <p class="Goto_Another"> New Here? <span (click)="modalRef.hide(); openModal(Registertemplate)" > Register </span> </p>
     <h6 class="Login_with">
       <span>Login With</span>
@@ -113,7 +119,7 @@
       </div>
 
       <p class="Note"> <span> Note:</span> Please enter your correct email and we will send you a password on that email. </p>
-      <p class="Submit_Btn"> SUBMIT </p>
+      <p [routerLink]="['/User_View']"  (click)="modalRef.hide()" class="Submit_Btn"> SUBMIT </p>
       <p class="Goto_Another"> Already have an account? <span (click)="modalRef.hide(); openModal(template)"> Login here </span> </p>
       <h6 class="Login_with">
         <span>Login With</span>

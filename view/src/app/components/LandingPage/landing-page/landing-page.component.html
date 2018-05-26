@@ -1,7 +1,7 @@
 <app-main-header></app-main-header>
 
 <div class="Landing_Map" *ngIf="lat > 0 && lng > 0">
-  <agm-map [latitude]="lat" [zoom]="17" [longitude]="lng" [styles]= "styles">
+  <agm-map [latitude]="lat" [zoom]="16" [longitude]="lng" [styles]= "styles">
     <agm-circle [latitude]="circleLat" [longitude]="circleLng" [radius]="100" [fillColor]="'#FA601F'" ></agm-circle>
     <agm-circle [latitude]="circleLat" [longitude]="circleLng" [radius]="200" [fillColor]="'#FA601F'"></agm-circle>
     <agm-circle [latitude]="circleLat" [longitude]="circleLng" [radius]="400" [fillColor]="'#FA601F'"></agm-circle>
@@ -115,7 +115,7 @@
   </agm-map>
 
   <div class="Filter_Section">
-    <div class="Icon_Group">
+    <div class="Icon_Group" [routerLink]="['/Restaurant_List']">
       <i class="material-icons"> filter_list </i>
       <i class="material-icons">restaurant </i>
     </div>

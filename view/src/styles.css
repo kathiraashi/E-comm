@@ -1,7 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import '../node_modules/primeng/resources/themes/omega/theme.css';
+@import '../node_modules/primeng/resources/primeng.css';
+
 @import './assets/OverWrite-Css/ngx-bootstarp-overwrite.css';
 @import './assets/OverWrite-Css/agm-overwrite.css';
 @import './assets/OverWrite-Css/material-overwrite.css';
+
+@import './assets/OverWrite-Css/primeng-overwrite.css';
 
 body { margin: 0; }

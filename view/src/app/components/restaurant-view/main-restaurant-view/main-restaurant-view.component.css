@@ -142,6 +142,7 @@ ul{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top: 0px;
+    z-index: 1;
 }
 .Store_Info_Detail_Right .Working_Time:hover > ul.Daily_Timing{
     max-height: 500px !important;

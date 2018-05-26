@@ -1,4 +1,5 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 import { BsModalService } from 'ngx-bootstrap/modal';
 import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
@@ -11,7 +12,12 @@ import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 export class MainHeaderComponent implements OnInit {
 
   modalRef: BsModalRef;
-  constructor(private modalService: BsModalService) {}
+
+  Active_Page;
+
+  constructor(private modalService: BsModalService, private active_route: ActivatedRoute) {
+    this.Active_Page = this.active_route.routeConfig.path;
+  }
 
   ngOnInit() {
   }

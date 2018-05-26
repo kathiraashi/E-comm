@@ -1,0 +1,371 @@
+<app-main-header></app-main-header>
+
+<div class="Restaurant_View">
+  <!-- Store Basic Info Background Image Section -->
+  <div class="Search_Image_Section" style=" background: url(assets/Images/demo/photo01.jpg) no-repeat scroll 0 0 / cover;">
+    <!-- Container Start -->
+    <div class="container">
+      <!-- Row Start -->
+      <div class="row">
+        <!-- Column Start -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+          <div class="Search_Inputs">
+            <div class="Search_Input">
+              <i class="material-icons">search</i>
+              <input type="text" placeholder="Restaurant Name ">
+            </div>
+            <div class="Search_Input">
+              <i class="material-icons">location_on</i>
+              <input type="text" placeholder="Restaurant Name">
+              <i class="material-icons location_pic">my_location</i>
+            </div>
+          </div>
+        </div>
+        <!-- Column End -->
+      </div>
+      <!-- Row End -->
+    </div>
+    <!-- Container End -->
+  </div>
+  
+  <!-- Store Full Info Section -->
+  <div class="container Main_Section">
+    <div class="row">
+      <!-- Store Full Info Category Section -->
+      <div class="col-sm-3">
+        <div class="Filter_Section">
+          <div class="Filters_List">
+            <div class="Filter_Category">
+              <div class="Filter_Category_Header">
+                <h6> <i class="material-icons">restaurant_menu</i> Cuisines </h6>
+              </div>
+              <ul class="Filter_Category_List">
+                <li class="Filter_Category_Item">
+                    <mat-checkbox class="Style_1"> <span class="Text_1"> Indian </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> Italian </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> French </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> Mexican </span> </mat-checkbox>
+                </li>
+              </ul>
+            </div>
+            <div class="Filter_Category">
+              <div class="Filter_Category_Header">
+                <h6> <i class="material-icons">fastfood</i> Foods </h6>
+              </div>
+              <ul class="Filter_Category_List">
+                <li class="Filter_Category_Item">
+                    <mat-checkbox class="Style_1"> <span class="Text_1"> Apple Juice </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> Beef Roast </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> Cold Coffee</span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> Cold Drink </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> Noodles </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> Pizza </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> Steam Roast </span> </mat-checkbox>
+                </li>
+              </ul>
+            </div>
+            <div class="Filter_Category">
+              <div class="Filter_Category_Header">
+                <h6> <i class="material-icons">monetization_on</i> Price </h6>
+              </div>
+              <div class="Price_Section">
+                <h6> ${{rangeValues[0] + ' - $' + rangeValues[1]}} </h6>
+                <p-slider [(ngModel)]="rangeValues"  [range]="true"></p-slider>
+              </div>
+              <br>
+              <br>
+            </div>
+            <div class="Filter_Category">
+              <div class="Filter_Category_Header">
+                <h6> <i class="material-icons">timelapse</i> Cutoff Time </h6>
+              </div>
+              <ul class="Filter_Category_List">
+                <li class="Filter_Category_Item">
+                    <mat-checkbox class="Style_1"> <span class="Text_1"> 06.00 am to  08.00am </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> 08.00 am to  10.00am </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> 10.00 am to  12.00pm </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> 12.00 pm to  02.00pm </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> 02.00 pm to  04.00pm </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> 04.00 pm to  06.00pm  </span> </mat-checkbox>
+                </li>
+              </ul>
+            </div>
+            <div class="Filter_Category">
+              <div class="Filter_Category_Header">
+                <h6> <i class="material-icons">access_time</i> Pickup Time </h6>
+              </div>
+              <ul class="Filter_Category_List">
+                <li class="Filter_Category_Item">
+                    <mat-checkbox class="Style_1"> <span class="Text_1"> 06.00 am to  08.00am </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> 08.00 am to  10.00am </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> 10.00 am to  12.00pm </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> 12.00 pm to  02.00pm </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> 02.00 pm to  04.00pm </span> </mat-checkbox>
+                </li>
+                <li class="Filter_Category_Item">
+                  <mat-checkbox class="Style_1"> <span class="Text_1"> 04.00 pm to  06.00pm  </span> </mat-checkbox>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-7">
+        <div class="Restaurant_List">
+
+          <div class="Filter_Tags">
+            <div class="Tag_Category">
+              <h6> Cuisines:</h6>
+              <div class="Tags">
+                  <p> <span> Italian </span> <i class="material-icons">clear</i> </p>
+                  <p> <span> Indian </span> <i class="material-icons">clear</i> </p>
+                  <p> <span> Mexican </span> <i class="material-icons">clear</i> </p>
+                  <p> <span> French </span> <i class="material-icons">clear</i> </p>
+              </div>
+            </div>
+            <div class="Tag_Category">
+              <h6> Pickup Time:</h6>
+              <div class="Tags">
+                  <p> <span> 04.00pm to 06.00pm </span> <i class="material-icons">clear</i> </p>
+              </div>
+            </div>
+          </div>
+
+          <ul class="List">
+            <li class="Item">
+              <div class="Img_Section">
+                <figure>
+                    <img src="assets/Images/demo/logo02.png" class="img-list wp-post-image" alt="">
+                </figure>
+                <span class="Restaurant_Status Close"><em class="Ribbon"></em>Close</span>
+              </div>
+              <div class="Text_Section">
+                <div class="Name">
+                  <h5 [routerLink]="['/Restaurant_View']"> Restaurant Name <small> ( Indian and Italian Cuisines )</small> </h5>
+                </div>
+                <div class="Ratings_Stars">
+                  <span class="Rating_Count">4.5</span>
+                  <div class="Stars_Group">
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star_half</i>
+                  </div>
+                </div>
+                <span class="Categories">
+                  <b>Type of Foods : </b> Apple Juice, Chines Soup, Egg Fry, Fish Fry
+                </span>
+                <p class="Timing">
+                  <span> <b> Cutoff Time : </b> 03.00pm </span> <span> <b> &nbsp; Delivers at : </b> 04.00pm </span>
+                </p>
+              </div>
+              <div class="Options">
+                <p class="Favorite_Btn">
+                  <i class="material-icons">favorite_border</i>
+                </p>
+              </div>
+            </li>
+            <li class="Item">
+              <div class="Img_Section">
+                <figure>
+                    <img src="assets/Images/demo/logo02.png" class="img-list wp-post-image" alt="">
+                </figure>
+                <span class="Restaurant_Status "><em class="Ribbon"></em>Open</span>
+              </div>
+              <div class="Text_Section">
+                <div class="Name">
+                  <h5 [routerLink]="['/Restaurant_View']"> Restaurant Name <small> ( Italian Cuisine )</small></h5>
+                </div>
+                <div class="Ratings_Stars">
+                  <span class="Rating_Count">4.5</span>
+                  <div class="Stars_Group">
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star_half</i>
+                  </div>
+                </div>
+                <span class="Categories">
+                  <b>Type of Foods : </b> Apple Juice, Chines Soup, Egg Fry, Fish Fry
+                </span>
+                <p class="Timing">
+                  <span> <b> Cutoff Time : </b> 03.00pm </span> <span> <b> &nbsp; Delivers at : </b> 04.00pm </span>
+                </p>
+              </div>
+              <div class="Options">
+                <p class="Favorite_Btn">
+                  <i class="material-icons">favorite</i>
+                </p>
+              </div>
+            </li>
+            <li class="Item">
+              <div class="Img_Section">
+                <figure>
+                    <img src="assets/Images/demo/logo02.png" class="img-list wp-post-image" alt="">
+                </figure>
+                <span class="Restaurant_Status Close"><em class="Ribbon"></em>Close</span>
+              </div>
+              <div class="Text_Section">
+                <div class="Name">
+                  <h5 [routerLink]="['/Restaurant_View']"> Restaurant Name <small> ( French Cuisine )</small> </h5>
+                </div>
+                <div class="Ratings_Stars">
+                  <span class="Rating_Count">4.5</span>
+                  <div class="Stars_Group">
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star_half</i>
+                  </div>
+                </div>
+                <span class="Categories">
+                  <b>Type of Foods : </b> Apple Juice, Chines Soup, Egg Fry, Fish Fry
+                </span>
+                <p class="Timing">
+                  <span> <b> Cutoff Time : </b> 03.00pm </span> <span> <b> &nbsp; Delivers at : </b> 04.00pm </span>
+                </p>
+              </div>
+              <div class="Options">
+                <p class="Favorite_Btn">
+                  <i class="material-icons">favorite_border</i>
+                </p>
+              </div>
+            </li>
+            <li class="Item">
+              <div class="Img_Section">
+                <figure>
+                    <img src="assets/Images/demo/logo02.png" class="img-list wp-post-image" alt="">
+                </figure>
+                <span class="Restaurant_Status "><em class="Ribbon"></em>Open</span>
+              </div>
+              <div class="Text_Section">
+                <div class="Name">
+                  <h5 [routerLink]="['/Restaurant_View']"> Restaurant Name <small> ( Mexican Cuisine ) </small> </h5>
+                </div>
+                <div class="Ratings_Stars">
+                  <span class="Rating_Count">4.5</span>
+                  <div class="Stars_Group">
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star_half</i>
+                  </div>
+                </div>
+                <span class="Categories">
+                  <b>Type of Foods : </b> Apple Juice, Chines Soup, Egg Fry, Fish Fry
+                </span>
+                <p class="Timing">
+                  <span> <b> Cutoff Time : </b> 03.00pm </span> <span> <b> &nbsp; Delivers at : </b> 04.00pm </span>
+                </p>
+              </div>
+              <div class="Options">
+                <p class="Favorite_Btn">
+                  <i class="material-icons">favorite</i>
+                </p>
+              </div>
+            </li>
+            <li class="Item">
+              <div class="Img_Section">
+                <figure>
+                    <img src="assets/Images/demo/logo02.png" class="img-list wp-post-image" alt="">
+                </figure>
+                <span class="Restaurant_Status Close"><em class="Ribbon"></em>Close</span>
+              </div>
+              <div class="Text_Section">
+                <div class="Name">
+                  <h5 [routerLink]="['/Restaurant_View']"> Restaurant Name <small> ( Mexican and Italian Cuisines ) </small> </h5>
+                </div>
+                <div class="Ratings_Stars">
+                  <span class="Rating_Count">4.5</span>
+                  <div class="Stars_Group">
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star</i>
+                    <i class="material-icons colored">star_half</i>
+                  </div>
+                </div>
+                <span class="Categories">
+                  <b>Type of Foods : </b> Apple Juice, Chines Soup, Egg Fry, Fish Fry
+                </span>
+                <p class="Timing">
+                  <span> <b> Cutoff Time : </b> 03.00pm </span> <span> <b> &nbsp; Delivers at : </b> 04.00pm </span>
+                </p>
+              </div>
+              <div class="Options">
+                <p class="Favorite_Btn">
+                  <i class="material-icons">favorite_border</i>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <!-- Order Info Section -->
+        <div class="Short_Section">
+          <h6> Short By</h6>
+          <div class="Shot_Types">
+            <div class="Short_Text"> 
+              <i class="material-icons">text_rotate_vertical</i>
+              <span> Alphabetical </span> 
+            </div>
+            <div class="Short_Text"> 
+              <i class="material-icons">attach_money</i>
+              <span> Price </span> 
+            </div>
+            <div class="Short_Text"> 
+              <i class="material-icons">star_border</i>
+              <span> Rating </span> 
+            </div>
+            <div class="Short_Text"> 
+              <i class="material-icons">av_timer</i>
+              <span> Pickup Time </span> 
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+   </div>
+ </div>
+ 

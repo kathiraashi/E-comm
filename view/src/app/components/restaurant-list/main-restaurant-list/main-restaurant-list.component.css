@@ -1,0 +1,380 @@
+
+label {
+    margin: 0px;
+}
+ul{
+    padding: 0px;
+    list-style-type: none;
+}
+.Restaurant_View{
+    background-color: #ebedf3;
+    width: 100%;
+    height: 100%;
+}
+.Search_Image_Section{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    padding: 30px 0px;
+}
+.Search_Image_Section::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.80);
+}
+.Search_Inputs {
+    display: inline-flex;
+}
+.Search_Input {
+    background-color: #ffffff;
+    width: 300px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-right: 20px;
+    height: 35px;
+}
+.Search_Input i {
+    color: #a7a7a7;
+    padding: 0px 5px;
+    font-size: 22px;
+}
+.Search_Input input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding-bottom: 4px;
+    font-size: 14px;
+}
+.Search_Input i.location_pic{
+    color: #fd6a03;
+    cursor: pointer;
+}
+
+
+
+
+
+.Main_Section{
+    margin-top: 30px;
+}
+
+
+
+
+
+.Filter_Section .Filter_Category .Filter_Category_Header {
+    display: block;
+    padding: 9px 0px;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 10px;
+}
+.Filter_Section .Filter_Category .Filter_Category_Header h6{
+    display: flex;
+    align-items: center;
+    color: #484848;
+    margin: 0px;
+}
+.Filter_Section .Filter_Category .Filter_Category_Header h6 i{
+    margin-right: 10px;
+    color: #484848;
+}
+.Filter_Section .Filter_Category .Filter_Category_List{
+    padding-left: 10px;
+}
+.Filter_Section .Filter_Category .Filter_Category_List .Filter_Category_Item .Text_1 {
+    font-size: 14px;
+    color: #999999;
+}
+
+.Filter_Section .Filter_Category .Price_Section{
+    padding: 0px 10px;
+}
+.Filter_Section .Filter_Category .Price_Section h6{
+    text-align: center;
+    color: #999;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Filter_Tags {
+    padding: 0px 10px;
+    margin-bottom: 15px;
+}
+.Filter_Tags .Tag_Category {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.Filter_Tags .Tag_Category h6 {
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+.Filter_Tags .Tag_Category .Tags {
+    display: inline-flex;
+    align-items: center;
+}
+.Filter_Tags .Tag_Category .Tags p {
+    border: 1px solid #dcdcdc;
+    margin: 0px;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    background-color: white;
+    padding: 2px 10px;
+    border-radius: 2px;
+}
+.Filter_Tags .Tag_Category .Tags p span {
+    font-size: 14px;
+    color: #737373;
+}
+.Filter_Tags .Tag_Category .Tags p i {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #999;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+
+.Restaurant_List .List{
+    list-style-type: none;
+}
+.Restaurant_List .List .Item {
+    list-style: none;
+    background-color: #ffffff;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    padding: 20px;
+    margin: 0px 0px 20px 0;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.Restaurant_List .List .Item .Img_Section {
+    display: inline-block;
+    width: 95px;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+.Restaurant_List .List .Item .Img_Section figure {
+    height: 95px;
+    position: relative;
+    margin: 0px;
+}
+.Restaurant_List .List .Item .Img_Section figure img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #ecedf3;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.Restaurant_List .List .Item .Img_Section .Restaurant_Status {
+    position: absolute;
+    top: 5px;
+    left: -11px;
+    padding: 3px 10px;
+    line-height: normal;
+    background: #3ab54b;
+    font-size: 10px;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    min-height: 20px;
+    min-width: 52px;
+    text-align: center;
+}
+.Restaurant_List .List .Item .Img_Section .Restaurant_Status.Close {
+    background: #ed1b24;
+}
+.Restaurant_List .List .Item .Img_Section .Restaurant_Status:before {
+    width: 0;
+    height: 0;
+    border-top: 10px solid #239132;
+    border-left: 10px solid transparent;
+    content: "";
+    left: 0;
+    position: absolute;
+    bottom: -10px;
+}
+.Restaurant_List .List .Item .Img_Section .Restaurant_Status.Close:before {
+    border-top: 10px solid #c91018;
+}
+.Restaurant_List .List .Item .Img_Section .Restaurant_Status .Ribbon {
+    width: 10px;
+    height: 0px;
+    border-top: 10px solid #3ab54b;
+    border-bottom: 10px solid #3ab54b;
+    border-right: 5px solid transparent;
+    position: absolute;
+    top: 0;
+    right: -6px;
+}
+.Restaurant_List .List .Item .Img_Section .Restaurant_Status.Close .Ribbon {
+    border-top: 10px solid #ed1b24;
+    border-bottom: 10px solid #ed1b24;
+}
+.Restaurant_List .List .Item .Text_Section {
+    display: inline-block;
+    width: calc(100% - 95px);
+    width: -moz-calc(100% - 95px);
+    margin-right: -4px;
+    padding-left: 14px;
+    vertical-align: middle;
+    padding-right: 14px;
+    position: relative;
+}
+.Restaurant_List .List .Item .Text_Section .Name h5 {
+    margin-bottom: 4px;
+    cursor: pointer;
+    outline: none;
+}
+.Restaurant_List .List .Item .Text_Section .Name h5 small{
+    color: #a2a2a2;
+    font-size: 13px;
+    font-weight: 500;
+}
+.Restaurant_List .List .Item .Text_Section .Ratings_Stars {
+    display: inline-flex;
+}
+.Restaurant_List .List .Item .Text_Section .Ratings_Stars .Rating_Count {
+    font-weight: 600;
+    color: #484848;
+    margin-right: 4px;
+}
+.Restaurant_List .List .Item .Text_Section .Ratings_Stars .Stars_Group {
+    width: 100%;
+    position: relative;
+}
+.Restaurant_List .List .Item .Text_Section .Ratings_Stars .Stars_Group  i {
+    color: #888888;
+    font-size: 21px;
+}
+.Restaurant_List .List .Item .Text_Section .Ratings_Stars .Stars_Group  i.colored {
+    color: #ff981b;
+}
+.Restaurant_List .List .Item .Text_Section .Categories {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+.Restaurant_List .List .Item .Text_Section .Timing {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 0px;
+}
+.Restaurant_List .List .Item .Options {
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+}
+.Restaurant_List .List .Item .Options .Favorite_Btn {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 6px;
+    position: relative;
+}
+.Restaurant_List .List .Item .Options .Favorite_Btn i{
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fd6a03;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Short_Section {
+    background-color: #ffffff;
+    padding: 10px;
+}
+.Short_Section h6 {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+.Shot_Types .Short_Text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #f1f1f1;
+    cursor: pointer;
+}
+.Shot_Types .Short_Text i {
+    font-size: 25px;
+    color: #5a5a5a;
+}
+.Shot_Types .Short_Text span {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #888;
+}
+.Shot_Types .Short_Text:hover i,
+.Shot_Types .Short_Text:hover span{
+    color: #fd6a03;
+}

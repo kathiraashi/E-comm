@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
@@ -9,6 +10,7 @@ export class LandingPageComponent implements OnInit {
 
   lat: number;
   lng: number;
+  status_true: Boolean = false;
 
   circleLat: number;
   circleLng: number;
@@ -30,13 +32,21 @@ export class LandingPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    if (!!window.navigator.geolocation) {
+    if (window.navigator.geolocation) {
+
       window.navigator.geolocation.getCurrentPosition(position => {
+          this.status_true = true;
           this.lat = position.coords.latitude;
           this.lng = position.coords.longitude;
           this.circleLat = position.coords.latitude;
           this.circleLng = position.coords.longitude;
       });
+      if (!this.status_true) {
+        this.lat = 37.3382;
+        this.lng = 121.8863;
+        this.circleLat = 37.3382;
+        this.circleLng = 121.8863;
+      }
     }
   }
 

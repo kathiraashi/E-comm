@@ -188,6 +188,8 @@
 .Tab_Content_1 .Order_Item .Store_Info .Text_Section h6 {
     margin: 0;
     padding-right: 55px;
+    cursor: pointer;
+    outline: none;
 }
 .Tab_Content_1 .Order_Item .Store_Info .Text_Section p {
     font-size: 12px;
@@ -217,6 +219,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    outline: none;
 }
 .Tab_Content_1 .Order_Item .Store_Info .Text_Section span.Reorder i{
     font-size: 15px;
@@ -289,6 +292,263 @@
     border-radius: 3px;
     padding: 5px 12px 5px;
 }
+
+
+
+
+
+
+.Tab_Content_2 .Favorite_Section .Favorite_Header_Tabs {
+    display: flex;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Header_Tabs p{
+    width: 50%;
+    text-align: center;
+    height: 40px;
+    background-color: #ecedf3;
+    color: #484848;
+    margin: 0px;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Header_Tabs p:hover{
+    color: #fd6a03;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Header_Tabs p.active{
+    background-color: #fd6a03;
+    color: #ffffff;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Contents {
+    margin-top: 30px;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List{
+    list-style-type: none;
+    padding: 0px 20px;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item {
+    list-style: none;
+    background-color: #ecedf3;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    padding: 10px;
+    margin: 0px 0px 20px 0;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Img_Section {
+    display: inline-block;
+    width: 95px;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Img_Section figure {
+    height: 95px;
+    position: relative;
+    margin: 0px;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Img_Section figure img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Img_Section .Restaurant_Status {
+    position: absolute;
+    top: 5px;
+    left: -11px;
+    padding: 3px 10px;
+    line-height: normal;
+    background: #3ab54b;
+    font-size: 10px;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    min-height: 20px;
+    min-width: 52px;
+    text-align: center;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Img_Section .Restaurant_Status.Close {
+    background: #ed1b24;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Img_Section .Restaurant_Status:before {
+    width: 0;
+    height: 0;
+    border-top: 10px solid #239132;
+    border-left: 10px solid transparent;
+    content: "";
+    left: 0;
+    position: absolute;
+    bottom: -10px;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Img_Section .Restaurant_Status.Close:before {
+    border-top: 10px solid #c91018;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Img_Section .Restaurant_Status .Ribbon {
+    width: 10px;
+    height: 0px;
+    border-top: 10px solid #3ab54b;
+    border-bottom: 10px solid #3ab54b;
+    border-right: 5px solid transparent;
+    position: absolute;
+    top: 0;
+    right: -6px;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Img_Section .Restaurant_Status.Close .Ribbon {
+    border-top: 10px solid #ed1b24;
+    border-bottom: 10px solid #ed1b24;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Text_Section {
+    display: inline-block;
+    width: calc(100% - 95px);
+    width: -moz-calc(100% - 95px);
+    margin-right: -4px;
+    padding-left: 14px;
+    vertical-align: middle;
+    padding-right: 14px;
+    position: relative;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Text_Section .Name h5 {
+    margin-bottom: 4px;
+    cursor: pointer;
+    outline: none;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Text_Section .Ratings_Stars {
+    display: inline-flex;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Text_Section .Ratings_Stars .Rating_Count {
+    font-weight: 600;
+    color: #484848;
+    margin-right: 4px;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Text_Section .Ratings_Stars .Stars_Group {
+    width: 100%;
+    position: relative;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Text_Section .Ratings_Stars .Stars_Group  i {
+    color: #888888;
+    font-size: 21px;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Text_Section .Ratings_Stars .Stars_Group  i.colored {
+    color: #ff981b;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Text_Section .Categories {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Text_Section .Timing {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 0px;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Options {
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Options .Favorite_Btn {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 6px;
+    position: relative;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_1 .List .Item .Options .Favorite_Btn i{
+    width: 28px;
+    height: 28px;
+    line-height: 27px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #dddddd;
+    background-color: #484848;
+    cursor: pointer;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_2 .List{
+    list-style-type: none;
+    padding: 0px 20px;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_2 .List .Item{
+    display: inline-flex;
+    border-bottom: 1px solid #ebedf3;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    position: relative;
+    align-items: center
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_2 .List .Image_Section{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    vertical-align: top;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_2 .List .Image_Section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_2 .List .Item_Info{
+    padding: 0px 10px;
+    width: calc(100% - 70px);
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_2 .List .Item_Info .Item_Name{
+    font-weight: 600;
+    font-size: 17px;
+    margin: 0px;
+    color: #484848;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_2 .List .Item_Info .Restaurant_Details{
+    margin: 0px;
+    font-size: 13px;
+    color: #999999;
+    letter-spacing: 0.4px;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_2 .List .Item_Info .Item_Details{
+    margin: 0px;
+    font-size: 13px;
+    color: #999999;
+    letter-spacing: 0.4px;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_2 .List .Item_Info .Price{
+    color: #fd6a03;
+    font-weight: 700;
+    margin: 0px;
+}
+.Tab_Content_2 .Favorite_Section .Favorite_Tab_Content_2 .List .Price_Info i{
+    width: 28px;
+    height: 28px;
+    line-height: 27px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #dddddd;
+    background-color: #484848;
+    cursor: pointer;
+}
+
+
+
 
 
 
@@ -407,4 +667,216 @@
 .Tab_Content_3 .Review_Section .Reviews_List .Reviews_Item .Review_Text p{
     font-size: 14px;
     color: #999999;
+}
+
+
+
+
+
+.Tab_Content_4 .Card_Section {
+    padding: 30px 20px;
+}
+.Tab_Content_4 .Card_Section ul {
+    list-style-type: none;
+    padding: 0px;
+}
+.Tab_Content_4 .Card_Section .New_Card_Header{
+    border-bottom: 1px dashed #999999;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.Tab_Content_4 .Card_Section .New_Card {
+    padding-right: 20px;
+    padding-left: 10px;
+}
+.Tab_Content_4 .Card_Section .New_Card input {
+    width: 100%;
+    padding: 0px 10px;
+    height: 35px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #d6d6d6;
+}
+.Tab_Content_4 .Card_Section .New_Card button {
+    margin: 0px;
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #fd6a03;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #fd6a03;
+    border-radius: 3px;
+    outline: none;
+}
+
+.Tab_Content_4 .Card_Section .Saved_Cards_Header{
+    border-bottom: 1px dashed #999999;
+    margin-bottom: 10px;
+}
+.Tab_Content_4 .Card_Section .Saved_Card {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 0px;
+    padding-left: 10px;
+}
+.Tab_Content_4 .Card_Section .Saved_Card .Display_Name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #484848;
+    margin: 0px;
+    padding-right: 20px;
+}
+.Tab_Content_4 .Card_Section .Saved_Card .Card_Type {
+    height: 20px;
+    padding-right: 15px;
+}
+.Tab_Content_4 .Card_Section .Saved_Card .Card_Type img {
+    height: 20px;
+    border: 1px solid #d2d1d1;
+    padding: 2px;
+    width: 35px;
+}
+.Tab_Content_4 .Card_Section .Saved_Card .Card-No {
+    font-size: 15px;
+    font-weight: 600;
+    color: #c1c1c1;
+    margin: 0px;
+    padding-right: 20px;
+}
+.Tab_Content_4 .Card_Section .Saved_Card i {
+    margin: 0px 5px;
+    color: #0691d4;
+    border: 1px solid;
+    height: 27px;
+    width: 27px;
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+.Tab_Content_4 .Card_Section .Saved_Card i.Delete {
+    color: #d40808;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Tab_Content_5 .Header_Section{
+    margin-bottom: 30px;
+}
+.Tab_Content_5 .Input_Field{
+    margin-bottom: 25px;
+}
+.Tab_Content_5 .Input_Field label{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #888888;
+}
+.Tab_Content_5 .Input_Field input{
+    width: 100%;
+    height: 38px;
+    outline: none;
+    border: 1px solid #e8e7e7;
+    padding: 0px 10px;
+    font-weight: 600;
+    color: #484848;
+}
+.Tab_Content_5 .Image_Section img {
+    width: 170px;
+    max-height: 170px;
+    border-radius: 10px;
+}
+.Tab_Content_5 .Image_Section .Upload_Button {
+    margin-top: 25px;
+}
+.Tab_Content_5 .Image_Section .Upload_Button span{
+    border: 1px solid #fd6a03;
+    padding: 6px 10px;
+    color: #fd6a03;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Tab_Content_5 .Submit_Btn {
+    margin-top: 30px;
+    border-top: 1px dashed #dcdcdc;
+    padding-top: 20px;
+}
+.Tab_Content_5 .Submit_Btn span{
+    background-color: #fd6a03;
+    font-size: 17px;
+    padding: 7px 20px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Tab_Content_6 .Header_Section{
+    margin-bottom: 30px;
+}
+.Tab_Content_6 .Input_Field{
+    margin-bottom: 25px;
+}
+.Tab_Content_6 .Input_Field label{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #888888;
+}
+.Tab_Content_6 .Input_Field input{
+    width: 100%;
+    height: 38px;
+    outline: none;
+    border: 1px solid #e8e7e7;
+    padding: 0px 10px;
+    font-weight: 600;
+    color: #484848;
+}
+.Tab_Content_6 .Submit_Btn {
+    margin-top: 30px;
+    border-top: 1px dashed #dcdcdc;
+    padding-top: 20px;
+}
+.Tab_Content_6 .Submit_Btn span{
+    background-color: #fd6a03;
+    font-size: 17px;
+    padding: 5px 15px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.6px;
+    border-radius: 2px;
+    cursor: pointer;
 }

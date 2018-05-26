@@ -73,6 +73,7 @@
     display: flex;
     align-items: center;
     padding-left: 1px;
+    outline: none;
 }
 .Filter_Section .Icon_Group i{
     font-size: 25px;

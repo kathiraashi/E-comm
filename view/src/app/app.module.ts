@@ -13,7 +13,8 @@ import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 import { ModalModule, } from 'ngx-bootstrap';
 
-import {MatStepperModule, MatRadioModule, MatExpansionModule} from '@angular/material';
+import {MatStepperModule, MatCheckboxModule, MatRadioModule, MatExpansionModule} from '@angular/material';
+import {SliderModule} from 'primeng/slider';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
@@ -23,6 +24,7 @@ import { MainHeaderComponent } from './components/commonPages/main-header/main-h
 import { LandingPageComponent } from './components/LandingPage/landing-page/landing-page.component';
 import { MainUserViewComponent } from './components/UserView/main-user-view/main-user-view.component';
 import { CartPageComponent } from './components/OrderProcess/cart-page/cart-page.component';
+import { MainRestaurantListComponent } from './components/restaurant-list/main-restaurant-list/main-restaurant-list.component';
 
 
 @NgModule({
@@ -32,7 +34,8 @@ import { CartPageComponent } from './components/OrderProcess/cart-page/cart-page
     MainHeaderComponent,
     LandingPageComponent,
     MainUserViewComponent,
-    CartPageComponent
+    CartPageComponent,
+    MainRestaurantListComponent
    ],
   imports: [
     BrowserModule,
@@ -48,8 +51,10 @@ import { CartPageComponent } from './components/OrderProcess/cart-page/cart-page
     AgmSnazzyInfoWindowModule,
     ModalModule.forRoot(),
     MatStepperModule,
+    MatCheckboxModule,
     MatRadioModule,
-    MatExpansionModule
+    MatExpansionModule,
+    SliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

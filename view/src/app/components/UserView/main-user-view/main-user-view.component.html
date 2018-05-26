@@ -50,7 +50,7 @@
           </li>
           <li [ngClass]="{'active': Active_Tab === 'My_Favorites'}" (click)="Change_Active_Tab('My_Favorites')">
               <i class="material-icons">favorite_border</i> 
-              <span>My Favorites </span>
+              <span>My Favorite </span>
           </li>
           <li [ngClass]="{'active': Active_Tab === 'My_Reviews'}" (click)="Change_Active_Tab('My_Reviews')">
               <i class="material-icons">message</i> 
@@ -60,19 +60,19 @@
               <i class="material-icons">credit_card</i> 
               <span>Saved Cards</span>
           </li>
-          <li [ngClass]="{'active': Active_Tab === 'Saved_Locations'}" (click)="Change_Active_Tab('Saved_Locations')">
+          <!-- <li [ngClass]="{'active': Active_Tab === 'Saved_Locations'}" (click)="Change_Active_Tab('Saved_Locations')">
               <i class="material-icons">location_on</i> 
               <span>Saved Locations</span>
-          </li>
-          <li [ngClass]="{'active': Active_Tab === 'Privacy_Settings'}" (click)="Change_Active_Tab('Privacy_Settings')">
-              <i class="material-icons">vpn_lock</i> 
-              <span>Privacy Settings</span>
-          </li>
+          </li> -->
           <li [ngClass]="{'active': Active_Tab === 'Account_Settings'}" (click)="Change_Active_Tab('Account_Settings')">
               <i class="material-icons">settings</i> 
               <span>Account Settings</span>
           </li>
-          <li [ngClass]="{'active': Active_Tab === 'Log_Out'}" (click)="Change_Active_Tab('Log_Out')">
+          <li [ngClass]="{'active': Active_Tab === 'Change_Password'}" (click)="Change_Active_Tab('Change_Password')">
+              <i class="material-icons">lock</i> 
+              <span>Change Password </span>
+          </li>
+          <li [routerLink]="['/']">
               <i class="material-icons">power_settings_new</i> 
               <span>Log Out</span>
           </li>
@@ -99,10 +99,10 @@
                       </figure>
                     </div>
                     <div class="Text_Section">
-                      <h6>Restaurant Demo</h6>
+                      <h6 [routerLink]="['/Restaurant_View']">Restaurant Demo</h6>
                       <p>Vegetarian 12" Deep Pan</p>
                       <span class="price">$ 31.40</span>
-                      <span class="Reorder"> <i class="material-icons">open_in_new</i> Reorder</span>
+                      <span class="Reorder" [routerLink]="['/Cart']"> <i class="material-icons">open_in_new</i> Reorder</span>
                     </div>
                   </div>
                   <div class="Order_Address">
@@ -127,10 +127,10 @@
                       </figure>
                     </div>
                     <div class="Text_Section">
-                      <h6>Restaurant Demo</h6>
+                      <h6 [routerLink]="['/Restaurant_View']">Restaurant Demo</h6>
                       <p>Vegetarian 12" Deep Pan</p>
                       <span class="price">$ 31.40</span>
-                      <span class="Reorder"> <i class="material-icons">open_in_new</i> Reorder</span>
+                      <span class="Reorder" [routerLink]="['/Cart']"> <i class="material-icons">open_in_new</i> Reorder</span>
                     </div>
                   </div>
                   <div class="Order_Address">
@@ -155,10 +155,10 @@
                       </figure>
                     </div>
                     <div class="Text_Section">
-                      <h6>Restaurant Demo</h6>
+                      <h6 [routerLink]="['/Restaurant_View']">Restaurant Demo</h6>
                       <p>Vegetarian 12" Deep Pan</p>
                       <span class="price">$ 31.40</span>
-                      <span class="Reorder">  <i class="material-icons">open_in_new</i> Reorder</span>
+                      <span class="Reorder" [routerLink]="['/Cart']">  <i class="material-icons">open_in_new</i> Reorder</span>
                     </div>
                   </div>
                   <div class="Order_Address">
@@ -183,10 +183,10 @@
                       </figure>
                     </div>
                     <div class="Text_Section">
-                      <h6>Restaurant Demo</h6>
+                      <h6 [routerLink]="['/Restaurant_View']">Restaurant Demo</h6>
                       <p>Vegetarian 12" Deep Pan</p>
                       <span class="price">$ 31.40</span>
-                      <span class="Reorder">  <i class="material-icons">open_in_new</i> Reorder</span>
+                      <span class="Reorder" [routerLink]="['/Cart']">  <i class="material-icons">open_in_new</i> Reorder</span>
                     </div>
                   </div>
                   <div class="Order_Address">
@@ -205,6 +205,216 @@
             </div>
           </div>
 
+          <div class="Tab_Content_2" *ngIf="Active_Tab === 'My_Favorites'">
+            <div class="Favorite_Section">
+              <div class="Favorite_Header_Tabs">
+                <p [ngClass]="{'active': Favorite_Active_Tab === 'Restaurants'}" (click)="Change_Favorite_Active_Tab('Restaurants')" > Restaurants </p>
+                <p [ngClass]="{'active': Favorite_Active_Tab === 'Foods'}" (click)="Change_Favorite_Active_Tab('Foods')" > Foods </p>
+              </div>
+              <div class="Favorite_Tab_Contents">
+                <div class="Favorite_Tab_Content_1" *ngIf="Favorite_Active_Tab === 'Restaurants'">
+                  <ul class="List">
+                    <li class="Item">
+                      <div class="Img_Section">
+                        <figure>
+                            <img src="assets/Images/demo/logo02.png" class="img-list wp-post-image" alt="">
+                        </figure>
+                        <span class="Restaurant_Status Close"><em class="Ribbon"></em>Close</span>
+                      </div>
+                      <div class="Text_Section">
+                        <div class="Name">
+                          <h5 [routerLink]="['/Restaurant_View']"> Restaurant Name </h5>
+                        </div>
+                        <div class="Ratings_Stars">
+                          <span class="Rating_Count">4.5</span>
+                          <div class="Stars_Group">
+                            <i class="material-icons colored">star</i>
+                            <i class="material-icons colored">star</i>
+                            <i class="material-icons colored">star</i>
+                            <i class="material-icons colored">star</i>
+                            <i class="material-icons colored">star_half</i>
+                          </div>
+                        </div>
+                        <span class="Categories">
+                          <b>Type of Foods : </b> Apple Juice, Chines Soup, Egg Fry, Fish Fry
+                        </span>
+                        <p class="Timing">
+                          <span> <b> Cutoff Time : </b> 03.00pm </span> <span> <b> &nbsp; Delivers at : </b> 04.00pm </span>
+                        </p>
+                      </div>
+                      <div class="Options">
+                        <p class="Favorite_Btn">
+                          <i class="material-icons">clear</i>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="Item">
+                      <div class="Img_Section">
+                        <figure>
+                            <img src="assets/Images/demo/logo02.png" class="img-list wp-post-image" alt="">
+                        </figure>
+                        <span class="Restaurant_Status "><em class="Ribbon"></em>Open</span>
+                      </div>
+                      <div class="Text_Section">
+                        <div class="Name">
+                          <h5 [routerLink]="['/Restaurant_View']"> Restaurant Name </h5>
+                        </div>
+                        <div class="Ratings_Stars">
+                          <span class="Rating_Count">4.5</span>
+                          <div class="Stars_Group">
+                            <i class="material-icons colored">star</i>
+                            <i class="material-icons colored">star</i>
+                            <i class="material-icons colored">star</i>
+                            <i class="material-icons colored">star</i>
+                            <i class="material-icons colored">star_half</i>
+                          </div>
+                        </div>
+                        <span class="Categories">
+                          <b>Type of Foods : </b> Apple Juice, Chines Soup, Egg Fry, Fish Fry
+                        </span>
+                        <p class="Timing">
+                          <span> <b> Cutoff Time : </b> 03.00pm </span> <span> <b> &nbsp; Delivers at : </b> 04.00pm </span>
+                        </p>
+                      </div>
+                      <div class="Options">
+                        <p class="Favorite_Btn">
+                          <i class="material-icons">clear</i>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="Item">
+                      <div class="Img_Section">
+                        <figure>
+                            <img src="assets/Images/demo/logo02.png" class="img-list wp-post-image" alt="">
+                        </figure>
+                        <span class="Restaurant_Status Close"><em class="Ribbon"></em>Close</span>
+                      </div>
+                      <div class="Text_Section">
+                        <div class="Name">
+                          <h5 [routerLink]="['/Restaurant_View']"> Restaurant Name </h5>
+                        </div>
+                        <div class="Ratings_Stars">
+                          <span class="Rating_Count">4.5</span>
+                          <div class="Stars_Group">
+                            <i class="material-icons colored">star</i>
+                            <i class="material-icons colored">star</i>
+                            <i class="material-icons colored">star</i>
+                            <i class="material-icons colored">star</i>
+                            <i class="material-icons colored">star_half</i>
+                          </div>
+                        </div>
+                        <span class="Categories">
+                          <b>Type of Foods : </b> Apple Juice, Chines Soup, Egg Fry, Fish Fry
+                        </span>
+                        <p class="Timing">
+                          <span> <b> Cutoff Time : </b> 03.00pm </span> <span> <b> &nbsp; Delivers at : </b> 04.00pm </span>
+                        </p>
+                      </div>
+                      <div class="Options">
+                        <p class="Favorite_Btn">
+                          <i class="material-icons">clear</i>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="Item">
+                      <div class="Img_Section">
+                        <figure>
+                            <img src="assets/Images/demo/logo02.png" class="img-list wp-post-image" alt="">
+                        </figure>
+                        <span class="Restaurant_Status "><em class="Ribbon"></em>Open</span>
+                      </div>
+                      <div class="Text_Section">
+                        <div class="Name">
+                          <h5 [routerLink]="['/Restaurant_View']"> Restaurant Name </h5>
+                        </div>
+                        <div class="Ratings_Stars">
+                          <span class="Rating_Count">4.5</span>
+                          <div class="Stars_Group">
+                            <i class="material-icons colored">star</i>
+                            <i class="material-icons colored">star</i>
+                            <i class="material-icons colored">star</i>
+                            <i class="material-icons colored">star</i>
+                            <i class="material-icons colored">star_half</i>
+                          </div>
+                        </div>
+                        <span class="Categories">
+                          <b>Type of Foods : </b> Apple Juice, Chines Soup, Egg Fry, Fish Fry
+                        </span>
+                        <p class="Timing">
+                          <span> <b> Cutoff Time : </b> 03.00pm </span> <span> <b> &nbsp; Delivers at : </b> 04.00pm </span>
+                        </p>
+                      </div>
+                      <div class="Options">
+                        <p class="Favorite_Btn">
+                          <i class="material-icons">clear</i>
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="Favorite_Tab_Content_2" *ngIf="Favorite_Active_Tab === 'Foods'">
+                  <ul class="List">
+                    <li class="Item">
+                      <div class="Image_Section">
+                        <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/blogs-food-bakery-05-150x150.jpg" alt="">
+                      </div>
+                      <div class="Item_Info">
+                        <h6 class="Item_Name"> Margherita 9" Deep Pan</h6>
+                        <p class="Restaurant_Details"><b>Name of Restaurant: </b> Restaurant Name</p>
+                        <p class="Item_Details"><b>Ingredients: </b> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs</p>
+                        <h5 class="Price"> $13.00</h5>
+                      </div>
+                      <div class="Price_Info">
+                        <i class="material-icons">clear</i>
+                      </div>
+                    </li>
+                    <li class="Item">
+                      <div class="Image_Section">
+                        <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/blogs-food-bakery-05-150x150.jpg" alt="">
+                      </div>
+                      <div class="Item_Info">
+                        <h6 class="Item_Name"> Margherita 9" Deep Pan</h6>
+                        <p class="Restaurant_Details"><b>Name of Restaurant: </b> Restaurant Name</p>
+                        <p class="Item_Details"><b>Ingredients: </b>Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs</p>
+                        <h5 class="Price"> $13.00</h5>
+                      </div>
+                      <div class="Price_Info">
+                        <i class="material-icons">clear</i>
+                      </div>
+                    </li>
+                    <li class="Item">
+                      <div class="Image_Section">
+                        <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/blogs-food-bakery-05-150x150.jpg" alt="">
+                      </div>
+                      <div class="Item_Info">
+                        <h6 class="Item_Name"> Margherita 9" Deep Pan</h6>
+                        <p class="Restaurant_Details"><b>Name of Restaurant: </b> Restaurant Name</p>
+                        <p class="Item_Details"><b>Ingredients: </b> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs</p>
+                        <h5 class="Price"> $13.00</h5>
+                      </div>
+                      <div class="Price_Info">
+                        <i class="material-icons">clear</i>
+                      </div>
+                    </li>
+                    <li class="Item">
+                      <div class="Image_Section">
+                        <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/blogs-food-bakery-05-150x150.jpg" alt="">
+                      </div>
+                      <div class="Item_Info">
+                        <h6 class="Item_Name"> Margherita 9" Deep Pan</h6>
+                        <p class="Restaurant_Details"><b>Name of Restaurant: </b> Restaurant Name</p>
+                        <p class="Item_Details"><b>Ingredients: </b>Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs</p>
+                        <h5 class="Price"> $13.00</h5>
+                      </div>
+                      <div class="Price_Info">
+                        <i class="material-icons">clear</i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="Tab_Content_3" *ngIf="Active_Tab === 'My_Reviews'">
             <div class="Review_Section">
@@ -338,6 +548,132 @@
                 </div>
             </div>
           </div>
+
+          <div class="Tab_Content_4" *ngIf="Active_Tab === 'Saved_Cards'">
+            <div class="Card_Section">
+              <ul>
+                <li><h5 class="Saved_Cards_Header"> Saved Cards </h5></li>
+                <li>
+                  <div class="Saved_Card">
+                    <p class="Display_Name">1) Card Name</p>
+                    <div class="Card_Type">
+                      <img src="assets/Images/basic/visa.png" alt="">
+                    </div>
+                    <p class="Card-No"> 00XX XXXX XXXX 9876 </p>
+                    <i class="material-icons">edit</i>
+                    <i class="material-icons Delete">delete</i>
+                  </div>
+                </li>
+                <li>
+                  <div class="Saved_Card">
+                    <p class="Display_Name">2) Card Name</p>
+                    <div class="Card_Type">
+                      <img src="assets/Images/basic/MasterCard.png" alt="">
+                    </div>
+                    <p class="Card-No"> 00XX XXXX XXXX 9876 </p>
+                    <i class="material-icons">edit</i>
+                    <i class="material-icons Delete">delete</i>
+                  </div>
+                </li>
+                <li>
+                  <div class="Saved_Card">
+                    <p class="Display_Name">3) Card Name</p>
+                    <div class="Card_Type">
+                      <img src="assets/Images/basic/visa.png" alt="">
+                    </div>
+                    <p class="Card-No"> 00XX XXXX XXXX 9876 </p>
+                    <i class="material-icons">edit</i>
+                    <i class="material-icons Delete">delete</i>
+                  </div>
+                </li>
+                <li>
+                  <h5 class="New_Card_Header">Add New Card </h5>
+                  <div class="New_Card">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <input type="text" placeholder="Display Card Name">
+                      </div>
+                      <div class="col-sm-6">
+                        <input type="text" placeholder="Card Number">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <input type="text" placeholder="Expiry Month and Year">
+                      </div>
+                      <div class="col-sm-4">
+                        <input type="text" placeholder="CVV">
+                      </div>
+                      <div class="col-sm-4">
+                        <button> Submit </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="Tab_Content_5" *ngIf="Active_Tab === 'Account_Settings'">
+            <div class="Header_Section">
+              <h5> Account Settings</h5>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="Input_Field">
+                  <label> Display Name </label>
+                  <input type="text">
+                </div>
+                <div class="Input_Field">
+                  <label> Email </label>
+                  <input type="text">
+                </div>
+                <div class="Input_Field">
+                  <label> Phone </label>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 text-center">
+                <div class="Image_Section">
+                  <img src="assets/Images/basic/photo.png" alt="">
+                  <p class="Upload_Button"> <span> Upload Picture </span> </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 text-right">
+                <p class="Submit_Btn"> <span> Submit </span> </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="Tab_Content_6" *ngIf="Active_Tab === 'Change_Password'">
+            <div class="Header_Section">
+              <h5> Change Password</h5>
+            </div>
+            <div class="row">
+              <div class="col-sm-7">
+                <div class="Input_Field">
+                  <label> Old Password *</label>
+                  <input type="password">
+                </div>
+                <div class="Input_Field">
+                  <label> New Password *</label>
+                  <input type="password">
+                </div>
+                <div class="Input_Field">
+                  <label> Coinfirm New Password * </label>
+                  <input type="password">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 text-right">
+                <p class="Submit_Btn"> <span> Submit </span> </p>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>

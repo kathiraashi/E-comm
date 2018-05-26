@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-main-user-view',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class MainUserViewComponent implements OnInit {
 
   Active_Tab = 'My_Orders';
+  Favorite_Active_Tab = 'Restaurants';
 
   constructor() { }
 
@@ -17,6 +19,12 @@ export class MainUserViewComponent implements OnInit {
   Change_Active_Tab(Tab_Value) {
     if (this.Active_Tab !== Tab_Value) {
       this.Active_Tab = Tab_Value;
+    }
+  }
+
+  Change_Favorite_Active_Tab(Tab_Value) {
+    if (this.Favorite_Active_Tab !== Tab_Value) {
+      this.Favorite_Active_Tab = Tab_Value;
     }
   }
 
