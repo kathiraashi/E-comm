@@ -32,6 +32,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 .gmnoprint div {
     background:none !important;
+    opacity:0;
 }
 .gm-svpc{
     display: none !important;

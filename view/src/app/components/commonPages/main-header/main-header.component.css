@@ -97,7 +97,6 @@
     margin-top: 12px;
     padding: 4px 10px;
     font-weight: 600;
-    margin-right: 15px;
     color: #fe7b33;
     border-radius: 5px;
     cursor: pointer;
@@ -137,6 +136,33 @@
     color: #484848;
     font-size: 17px;
 }
+.search_Section {
+    display: inline-flex;
+    align-items: center;
+    height: 35px;
+    border: 1px solid #e6e6e6;
+    margin-top: 14px;
+    border-radius: 34px;
+    width: 100% ;
+    margin-right: 10px;
+    float: right;
+    padding: 3px 5px 3px 15px;
+}
+.search_Section input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.search_Section i{
+    color: #999;
+}
+
+
+
+
+
+
+
 
 
 .modal-header .modal-title{

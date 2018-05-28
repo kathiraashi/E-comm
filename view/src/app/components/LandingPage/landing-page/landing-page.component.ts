@@ -16,17 +16,17 @@ export class LandingPageComponent implements OnInit {
   circleLng: number;
 
   styles: any[] = [
-    { 'featureType': 'administrative',           'elementType': 'labels.text.fill',   'stylers': [{ 'color': '#606269' }] },
-    { 'featureType': 'administrative.country',   'elementType': 'geometry.stroke',    'stylers': [{'color': '#c1c3bf'}] },
-    { 'featureType': 'landscape',                'elementType': 'all',                'stylers': [{ 'color': '#f1f1f1'}] },
-    { 'featureType': 'poi',                      'elementType': 'all',                'stylers': [{'visibility': 'off'}, {'lightness': '0'}] },
-    { 'featureType': 'road',                     'elementType': 'all',                'stylers': [{'saturation': -100}, {'lightness': '6' }] },
-    { 'featureType': 'road.highway',             'elementType': 'all',                'stylers': [{ 'visibility': 'simplified'}] },
-    { 'featureType': 'road.highway',             'elementType': 'geometry.fill',      'stylers': [{'color': '#ffffff'}] },
-    { 'featureType': 'road.arterial',            'elementType': 'labels.icon',        'stylers': [{'visibility': 'off'}] },
-    { 'featureType': 'transit',                  'elementType': 'all',                'stylers': [{'visibility': 'off'}] },
-    { 'featureType': 'water',                    'elementType': 'all',                'stylers': [{'color': '#d6d6d6'}, {'visibility': 'on'}]
-    }
+    // { 'featureType': 'administrative',           'elementType': 'labels.text.fill',   'stylers': [{ 'color': '#606269' }] },
+    // { 'featureType': 'administrative.country',   'elementType': 'geometry.stroke',    'stylers': [{'color': '#c1c3bf'}] },
+    // { 'featureType': 'landscape',                'elementType': 'all',                'stylers': [{ 'color': '#f1f1f1'}] },
+    // { 'featureType': 'poi',                      'elementType': 'all',                'stylers': [{'visibility': 'off'}, {'lightness': '0'}] },
+    // { 'featureType': 'road',                     'elementType': 'all',                'stylers': [{'saturation': -100}, {'lightness': '6' }] },
+    // { 'featureType': 'road.highway',             'elementType': 'all',                'stylers': [{ 'visibility': 'simplified'}] },
+    // { 'featureType': 'road.highway',             'elementType': 'geometry.fill',      'stylers': [{'color': '#ffffff'}] },
+    // { 'featureType': 'road.arterial',            'elementType': 'labels.icon',        'stylers': [{'visibility': 'off'}] },
+    // { 'featureType': 'transit',                  'elementType': 'all',                'stylers': [{'visibility': 'off'}] },
+    // { 'featureType': 'water',                    'elementType': 'all',                'stylers': [{'color': '#d6d6d6'}, {'visibility': 'on'}]
+    // }
   ];
 
   constructor() { }
@@ -42,10 +42,10 @@ export class LandingPageComponent implements OnInit {
           this.circleLng = position.coords.longitude;
       });
       if (!this.status_true) {
-        this.lat = 37.3382;
-        this.lng = 121.8863;
-        this.circleLat = 37.3382;
-        this.circleLng = 121.8863;
+        this.lat = 36.73252872710401;
+        this.lng = -119.79924472212213;
+        this.circleLat = 36.73252872710401;
+        this.circleLng = -119.79924472212213;
       }
     }
   }

@@ -26,7 +26,6 @@
 .User_Info_Detail_Left{
     display: table-cell;
     vertical-align: middle;
-    width: 100%;
 }
 .User_Info_Detail_Left .Img_Section{
     display: block;
@@ -80,6 +79,22 @@
     margin-right: 5px;
 }
 
+.User_Info_Cart_Btn {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+.User_Info_Cart_Btn span{
+    margin: 0px;
+    color: #ffffff;
+    background-color: #fd6a03;
+    padding: 7px 19px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    border-radius: 3px;
+    margin-right: 20px;
+    cursor: pointer;
+}
 
 
 

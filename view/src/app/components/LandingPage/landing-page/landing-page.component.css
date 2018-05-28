@@ -54,15 +54,27 @@
     color: #fd6a03;
     font-weight: 600;
 }
+.distance > span.view_btn {
+    float: right;
+    font-size: 15px;
+    background-color: #ffffff;
+    padding: 3px 15px;
+    border-radius: 2px;
+    border: 1px solid #fd6a03;
+    cursor: pointer;
+    margin-top: -10px;
+    outline: none;
+}
+
 
 
 
 .Filter_Section {
     position: absolute;
     right: 50px;
-    bottom: 100px;
+    bottom: 120px;
 }
-.Filter_Section .Icon_Group {
+.Filter_Section .Filter_Icon {
     background-color: #fd6a03;
     color: #ffffff;
     width: 55px;
@@ -75,6 +87,52 @@
     padding-left: 1px;
     outline: none;
 }
-.Filter_Section .Icon_Group i{
-    font-size: 25px;
+.Filter_Section .Filter_Icon img{
+    width: 40px;
+    margin: 8px;
+}
+
+
+.Footer_Section {
+    position: absolute;
+    right: 0px;
+    bottom: 60px;
+    width: 100%;
+    background-color: #7d7d7de3;
+    height: 45px;
+}
+.Footer_Section .Links {
+    align-items: center;
+    display: inline-flex;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+.Footer_Section .Links .link {
+    width: 20%;
+    height: 45px;
+    margin: 0px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.Footer_Section .Links .link:hover {
+    color: #fd6a03;
+}
+.Footer_Section .Partners_btn p {
+    text-align: right;
+    margin: 0px;
+    line-height: 45px;
+}
+.Footer_Section .Partners_btn p span {
+    padding: 7px 20px;
+    background-color: #fd6a03;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    letter-spacing: 0.4px;
 }

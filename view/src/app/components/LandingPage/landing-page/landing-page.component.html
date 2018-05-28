@@ -1,9 +1,9 @@
 <app-main-header></app-main-header>
 
-<div class="Landing_Map" *ngIf="lat > 0 && lng > 0">
+<div class="Landing_Map">
   <agm-map [latitude]="lat" [zoom]="16" [longitude]="lng" [styles]= "styles">
     <agm-circle [latitude]="circleLat" [longitude]="circleLng" [radius]="100" [fillColor]="'#FA601F'" ></agm-circle>
-    <agm-circle [latitude]="circleLat" [longitude]="circleLng" [radius]="200" [fillColor]="'#FA601F'"></agm-circle>
+    <agm-circle [latitude]="circleLat" [longitude]="circleLng" [radius]="250" [fillColor]="'#FA601F'"></agm-circle>
     <agm-circle [latitude]="circleLat" [longitude]="circleLng" [radius]="400" [fillColor]="'#FA601F'"></agm-circle>
 
     <agm-marker [latitude]="circleLat" [longitude]="circleLng" [openInfoWindow]="true" [markerDraggable]="true" (dragEnd)="updateCircle($event)" >
@@ -23,7 +23,7 @@
             <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
             <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
             <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
-            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span></p>
+            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span> <span class="view_btn" [routerLink]="['/Restaurant_View']"> View </span></p>
           </div>
         </ng-template>
       </agm-snazzy-info-window>
@@ -36,7 +36,7 @@
             <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
             <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
             <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
-            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span></p>
+            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span> <span class="view_btn" [routerLink]="['/Restaurant_View']"> View </span></p>
           </div>
         </ng-template>
       </agm-snazzy-info-window>
@@ -50,7 +50,7 @@
             <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
             <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
             <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
-            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span></p>
+            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span> <span class="view_btn" [routerLink]="['/Restaurant_View']"> View </span></p>
           </div>
         </ng-template>
       </agm-snazzy-info-window>
@@ -63,7 +63,7 @@
             <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
             <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
             <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
-            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span></p>
+            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span> <span class="view_btn" [routerLink]="['/Restaurant_View']"> View </span> </p>
           </div>
         </ng-template>
       </agm-snazzy-info-window>
@@ -78,7 +78,7 @@
             <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
             <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
             <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
-            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span></p>
+            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span> <span class="view_btn" [routerLink]="['/Restaurant_View']"> View </span> </p>
           </div>
         </ng-template>
       </agm-snazzy-info-window>
@@ -92,7 +92,7 @@
             <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
             <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
             <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
-            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span></p>
+            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span> <span class="view_btn" [routerLink]="['/Restaurant_View']"> View </span> </p>
           </div>
         </ng-template>
       </agm-snazzy-info-window>
@@ -106,7 +106,7 @@
             <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
             <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
             <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
-            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span></p>
+            <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span> <span class="view_btn" [routerLink]="['/Restaurant_View']"> View </span> </p>
           </div>
         </ng-template>
       </agm-snazzy-info-window>
@@ -115,9 +115,30 @@
   </agm-map>
 
   <div class="Filter_Section">
-    <div class="Icon_Group" [routerLink]="['/Restaurant_List']">
-      <i class="material-icons"> filter_list </i>
-      <i class="material-icons">restaurant </i>
+    <div class="Filter_Icon" [routerLink]="['/Restaurant_List']">
+      <img src="../../../../assets/Images/basic/funnel.png" alt="">
+    </div>
+  </div>
+
+  <div class="Footer_Section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="Links">
+            <p class="link"> About Us </p>
+            <p class="link"> Terms </p>
+            <p class="link"> Privacy </p>
+            <p class="link"> Contact </p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="Partners_btn">
+            <p>
+              <span> Partner with Us </span>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

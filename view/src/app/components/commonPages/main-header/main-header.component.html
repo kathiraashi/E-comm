@@ -1,56 +1,29 @@
 <div class="Header">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-4">
         <div class="Header_Left">
           <img [routerLink]="['/']" class="Logo" src="assets/Images/basic/E-commLogo.png" alt="" >
-          <div class="Dropdown_1">
-            <P> <i class="material-icons">fastfood</i> <span> Feel Like Eating </span> <i class="material-icons">arrow_drop_down</i> </P>
-            <ul class="Dropdown_1_List">
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-05-1.png"> --> <p>Apple Juice</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-19-1.png"> --> <p>BB.Q</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-22-1.png"> --> <p>Beef Roast</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-10-1.png"> --> <p>Carrot Juice</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-03-1.png"> --> <p>Cheese Burger</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-07-1.png"> --> <p>Chicken Roast</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-01-1.png"> --> <p>Chines Soup</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-18-1.png"> --> <p>Cold Coffee</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-23-1.png"> --> <p>Cold Drink</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-28-1.png"> --> <p>Cupcake</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-21-1.png"> --> <p>Doughnut</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-25-1.png"> --> <p>Drum Stick</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-11-1.png"> --> <p>Egg Fry</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-12-1.png"> --> <p>Fish Fry</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-13-1.png"> --> <p>Fresh Juice</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-30-1.png"> --> <p>Hot Dogs</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-26-1.png"> --> <p>Ice Cream</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-15-1.png"> --> <p>Magi</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-09-1.png"> --> <p>Noodles</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-14-1.png"> --> <p>Pastry</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-29-1.png"> --> <p>Pizza</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-06-1.png"> --> <p>Potato Fries</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-24-1.png"> --> <p>Prawns</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-17-1.png"> --> <p>Sham pane</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-27-1.png"> --> <p>Shawarma</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-04-1.png"> --> <p>Soda water</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-16-1.png"> --> <p>Stakes</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-22-1.png"> --> <p>Steam Roast</p> </div> </li>
-              <li> <div class="List_Item_Div"> <!-- <img alt="" src="assets/Images/demo/food-icon/food-icon-02-1.png"> --> <p>Tea</p> </div> </li>
-            </ul>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="search_Section">
+          <input type="text" placeholder="Search">
+          <i class="material-icons"> search </i>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <ng-container *ngIf="Active_Page !== 'User_View'">
+          <div class="Header_Right">
+            <p class="User_Button" (click)="openModal(template)"> Login / Register</p>
           </div>
-        </div>
-      </div>
-      <div class="col-sm-6" *ngIf="Active_Page !== 'User_View'">
-        <div class="Header_Right">
-          <p class="User_Button" (click)="openModal(template)"> Login / Register</p>
-          <!-- <p class="Vendor_Button"> Register Restaurant </p> -->
-        </div>
-      </div>
-      <div class="col-sm-6" *ngIf="Active_Page === 'User_View'">
-        <div class="Header_Right Logged_In">
-          <img src="assets/Images/basic/photo.png" alt="">
-          <p> User Name </p>
-        </div>
+        </ng-container>
+        <ng-container *ngIf="Active_Page === 'User_View'">
+          <div class="Header_Right Logged_In">
+            <img src="assets/Images/basic/photo.png" alt="">
+            <p> User Name </p>
+          </div>
+        </ng-container>
       </div>
   </div>
   </div>
@@ -131,3 +104,51 @@
       </div>
     </div>
   </ng-template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="Dropdown_1">
+      <P> <i class="material-icons">fastfood</i> <span> Feel Like Eating </span> <i class="material-icons">arrow_drop_down</i> </P>
+      <ul class="Dropdown_1_List">
+        <li> <div class="List_Item_Div"> <p>Apple Juice</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>BB.Q</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Beef Roast</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Carrot Juice</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Cheese Burger</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Chicken Roast</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Chines Soup</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Cold Coffee</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Cold Drink</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Cupcake</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Doughnut</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Drum Stick</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Egg Fry</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Fish Fry</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Fresh Juice</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Hot Dogs</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Ice Cream</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Magi</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Noodles</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Pastry</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Pizza</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Potato Fries</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Prawns</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Sham pane</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Shawarma</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Soda water</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Stakes</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Steam Roast</p> </div> </li>
+        <li> <div class="List_Item_Div"> <p>Tea</p> </div> </li>
+      </ul>
+    </div> -->
