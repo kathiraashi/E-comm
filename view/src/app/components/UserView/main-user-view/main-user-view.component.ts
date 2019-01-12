@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+
+import { BsModalService } from 'ngx-bootstrap/modal';
+import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 
 @Component({
   selector: 'app-main-user-view',
@@ -8,12 +11,21 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class MainUserViewComponent implements OnInit {
 
+  lat: Number = 36.7491268;
+  lng: Number = -119.8179682;
+
+  modalRef: BsModalRef;
+
   Active_Tab = 'My_Orders';
   Favorite_Active_Tab = 'Restaurants';
 
-  constructor() { }
+  constructor(private modalService: BsModalService) { }
 
   ngOnInit() {
+  }
+
+  openModal(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template, Object.assign({}, { class: ' maxWidth50' }));
   }
 
   Change_Active_Tab(Tab_Value) {

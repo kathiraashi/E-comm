@@ -15,6 +15,8 @@ import { ModalModule, } from 'ngx-bootstrap';
 
 import {MatStepperModule, MatCheckboxModule, MatRadioModule, MatExpansionModule} from '@angular/material';
 import {SliderModule} from 'primeng/slider';
+import {OverlayPanelModule} from 'primeng/overlaypanel';
+import {SidebarModule} from 'primeng/sidebar';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
@@ -54,7 +56,9 @@ import { MainRestaurantListComponent } from './components/restaurant-list/main-r
     MatCheckboxModule,
     MatRadioModule,
     MatExpansionModule,
-    SliderModule
+    SliderModule,
+    SidebarModule,
+    OverlayPanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]

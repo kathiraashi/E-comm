@@ -10,3 +10,6 @@
 .Login_Model .modal-header .close{
     padding: 20px;
 }
+.maxWidth50{
+    max-width: 50% !important;
+}

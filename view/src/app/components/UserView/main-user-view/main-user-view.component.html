@@ -63,10 +63,10 @@
               <i class="material-icons">credit_card</i> 
               <span>Saved Cards</span>
           </li>
-          <!-- <li [ngClass]="{'active': Active_Tab === 'Saved_Locations'}" (click)="Change_Active_Tab('Saved_Locations')">
+          <li [ngClass]="{'active': Active_Tab === 'Saved_Locations'}" (click)="Change_Active_Tab('Saved_Locations')">
               <i class="material-icons">location_on</i> 
               <span>Saved Locations</span>
-          </li> -->
+          </li>
           <li [ngClass]="{'active': Active_Tab === 'Account_Settings'}" (click)="Change_Active_Tab('Account_Settings')">
               <i class="material-icons">settings</i> 
               <span>Account Settings</span>
@@ -617,7 +617,52 @@
             </div>
           </div>
 
-          <div class="Tab_Content_5" *ngIf="Active_Tab === 'Account_Settings'">
+          <div class="Tab_Content_5" *ngIf="Active_Tab === 'Saved_Locations'">
+            <div class="Gmap_Section">
+              <h5 class="Saved_Loaction_Header"> Saved Locations 
+                <span (click)="openModal(SaveLocation)"> New Location </span> 
+              </h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="Agm_Map">
+                    <agm-map [latitude]="lat" [longitude]="lng" [styles]= "styles">
+                      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                    </agm-map>
+                    <span class="SavedName"> My Home </span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="Agm_Map">
+                    <agm-map [latitude]="lat" [longitude]="lng" [styles]= "styles">
+                      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                    </agm-map>
+                    <span class="SavedName"> My Office </span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="Agm_Map">
+                    <agm-map [latitude]="lat" [longitude]="lng" [styles]= "styles">
+                      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                    </agm-map>
+                    <span class="SavedName"> Jone Home </span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="Agm_Map">
+                    <agm-map [latitude]="lat" [longitude]="lng" [styles]= "styles">
+                      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                    </agm-map>
+                    <span class="SavedName"> Reea Office </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="Tab_Content_6" *ngIf="Active_Tab === 'Account_Settings'">
             <div class="Header_Section">
               <h5> Account Settings</h5>
             </div>
@@ -650,7 +695,7 @@
             </div>
           </div>
 
-          <div class="Tab_Content_6" *ngIf="Active_Tab === 'Change_Password'">
+          <div class="Tab_Content_7" *ngIf="Active_Tab === 'Change_Password'">
             <div class="Header_Section">
               <h5> Change Password</h5>
             </div>
@@ -683,3 +728,33 @@
   </div>
  </div>
 </div>
+
+
+
+
+<ng-template #SaveLocation>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left"> New Location </h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body Model_Map">
+    <div class="row">
+      <div class="col-sm-12">
+        <input type="text" placeholder="Name">
+      </div>
+    </div>
+    <div class="ModelAgm_Map">
+      <agm-map [latitude]="lat" [longitude]="lng" [styles]= "styles">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+      </agm-map>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-12 text-right">
+        <button aria-label="Close" (click)="modalRef.hide()"> Submit </button>
+      </div>
+    </div>
+  </div>
+</ng-template>

@@ -7,116 +7,102 @@
     <agm-circle [latitude]="circleLat" [longitude]="circleLng" [radius]="400" [fillColor]="'#FA601F'"></agm-circle>
 
     <agm-marker [latitude]="circleLat" [longitude]="circleLng" [openInfoWindow]="true" [markerDraggable]="true" (dragEnd)="updateCircle($event)" >
-      <agm-snazzy-info-window [maxWidth]="200" [closeWhenOthersOpen]="true">
-        <ng-template>
+      <agm-info-window [disableAutoPan]="true">
             <div class="marker_info">
-              <p class="user_location"> We will find your location, Else to Drag this Pointer to your Exact Location </p>
+              <p class="user_location" style="color: #969696; font-weight: 500;"> We will find your location,<br> Else to Drag this Pointer to your Exact Location </p>
             </div>
-        </ng-template>
-      </agm-snazzy-info-window>
+      </agm-info-window>
     </agm-marker>
 
     <agm-marker [latitude]="lat + .003" [longitude]="lng" >
-      <agm-snazzy-info-window [maxWidth]="200" [placement]="'left'" [closeWhenOthersOpen]="true">
-        <ng-template>
+      <agm-info-window [disableAutoPan]="true">
           <div class="marker_info">
             <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
             <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
             <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
             <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span> <span class="view_btn" [routerLink]="['/Restaurant_View']"> View </span></p>
           </div>
-        </ng-template>
-      </agm-snazzy-info-window>
+      </agm-info-window>
     </agm-marker>
 
     <agm-marker [latitude]="lat" [longitude]="lng + .003" >
-      <agm-snazzy-info-window [maxWidth]="200" [placement]="'left'" [closeWhenOthersOpen]="true">
-        <ng-template>
+      <agm-info-window [disableAutoPan]="true">
           <div class="marker_info">
             <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
             <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
             <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
             <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span> <span class="view_btn" [routerLink]="['/Restaurant_View']"> View </span></p>
           </div>
-        </ng-template>
-      </agm-snazzy-info-window>
+      </agm-info-window>
     </agm-marker>
 
-    
     <agm-marker [latitude]="lat + .002" [longitude]="lng + .002" >
-      <agm-snazzy-info-window [maxWidth]="200" [placement]="'left'" [closeWhenOthersOpen]="true">
-        <ng-template>
+      <agm-info-window [disableAutoPan]="true">
           <div class="marker_info">
             <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
             <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
             <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
             <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span> <span class="view_btn" [routerLink]="['/Restaurant_View']"> View </span></p>
           </div>
-        </ng-template>
-      </agm-snazzy-info-window>
+      </agm-info-window>
     </agm-marker>
 
     <agm-marker [latitude]="lat - .002" [longitude]="lng - .002" >
-      <agm-snazzy-info-window [maxWidth]="200" [placement]="'left'" [closeWhenOthersOpen]="true">
-        <ng-template>
+      <agm-info-window [disableAutoPan]="true">
           <div class="marker_info">
             <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
             <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
             <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
             <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span> <span class="view_btn" [routerLink]="['/Restaurant_View']"> View </span> </p>
           </div>
-        </ng-template>
-      </agm-snazzy-info-window>
+      </agm-info-window>
     </agm-marker>
-
-
 
     <agm-marker [latitude]="lat - .003" [longitude]="lng - .005" >
-      <agm-snazzy-info-window [maxWidth]="200" [placement]="'left'" [closeWhenOthersOpen]="true">
-        <ng-template>
+      <agm-info-window [disableAutoPan]="true">
           <div class="marker_info">
             <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
             <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
             <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
             <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span> <span class="view_btn" [routerLink]="['/Restaurant_View']"> View </span> </p>
           </div>
-        </ng-template>
-      </agm-snazzy-info-window>
+      </agm-info-window>
     </agm-marker>
 
-
     <agm-marker [latitude]="lat + .001" [longitude]="lng - .006" >
-      <agm-snazzy-info-window [maxWidth]="200" [placement]="'left'" [closeWhenOthersOpen]="true">
-        <ng-template>
+      <agm-info-window [disableAutoPan]="true">
           <div class="marker_info">
             <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
             <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
             <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
             <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span> <span class="view_btn" [routerLink]="['/Restaurant_View']"> View </span> </p>
           </div>
-        </ng-template>
-      </agm-snazzy-info-window>
+      </agm-info-window>
     </agm-marker>
 
 
     <agm-marker [latitude]="lat + .002" [longitude]="lng - .004" >
-      <agm-snazzy-info-window [maxWidth]="200" [placement]="'left'" [closeWhenOthersOpen]="true">
-        <ng-template>
+      <agm-info-window [disableAutoPan]="true">
           <div class="marker_info">
             <p class="loc_name"> Store Name <span> ( Location of the Store )</span> </p>
             <p class="order_time"> Order time ends in  <span> 45 min </span>  </p>
             <p class="deliver_time"> Delivered at <span> 4 pm </span>  </p>
             <p class="distance"> <span> 300 meter </span> by walk <span> 5 min </span> <span class="view_btn" [routerLink]="['/Restaurant_View']"> View </span> </p>
           </div>
-        </ng-template>
-      </agm-snazzy-info-window>
+      </agm-info-window>
     </agm-marker>
 
   </agm-map>
 
-  <div class="Filter_Section">
+  <!-- <div class="Action_Section" style="right: 105px;">
     <div class="Filter_Icon" [routerLink]="['/Restaurant_List']">
-      <img src="../../../../assets/Images/basic/funnel.png" alt="">
+      <i class="material-icons"> list_alt </i>
+    </div>
+  </div> -->
+
+  <div class="Action_Section">
+    <div class="Filter_Icon" (click)="FilterRightSection = true"  > <!--  (click)="FilterSideBar.toggle($event)" -->
+      <i class="material-icons"> filter_list </i>
     </div>
   </div>
 
@@ -142,3 +128,216 @@
     </div>
   </div>
 </div>
+
+
+<p-sidebar [(visible)]="FilterRightSection" position="right" [baseZIndex]="10000">
+  <div class="Filter_Section">
+    <div class="Filters_List" style="margin-bottom: 50px;">
+      <div class="Filter_Category">
+        <div class="Filter_Category_Header">
+          <h6> <i class="material-icons">restaurant_menu</i> Cuisines </h6>
+        </div>
+        <ul class="Filter_Category_List">
+          <li class="Filter_Category_Item">
+              <mat-checkbox class="Style_1"> <span class="Text_1"> Indian </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> Italian </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> French </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> Mexican </span> </mat-checkbox>
+          </li>
+        </ul>
+      </div>
+      <div class="Filter_Category">
+        <div class="Filter_Category_Header">
+          <h6> <i class="material-icons">fastfood</i> Foods </h6>
+        </div>
+        <ul class="Filter_Category_List">
+          <li class="Filter_Category_Item">
+              <mat-checkbox class="Style_1"> <span class="Text_1"> Apple Juice </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> Beef Roast </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> Cold Coffee</span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> Cold Drink </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> Noodles </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> Pizza </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> Steam Roast </span> </mat-checkbox>
+          </li>
+        </ul>
+      </div>
+      <div class="Filter_Category">
+        <div class="Filter_Category_Header">
+          <h6> <i class="material-icons">timelapse</i> Cutoff Time </h6>
+        </div>
+        <ul class="Filter_Category_List">
+          <li class="Filter_Category_Item">
+              <mat-checkbox class="Style_1"> <span class="Text_1"> 06.00 am to  08.00am </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 08.00 am to  10.00am </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 10.00 am to  12.00pm </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 12.00 pm to  02.00pm </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 02.00 pm to  04.00pm </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 04.00 pm to  06.00pm  </span> </mat-checkbox>
+          </li>
+        </ul>
+      </div>
+      <div class="Filter_Category">
+        <div class="Filter_Category_Header">
+          <h6> <i class="material-icons">access_time</i> Pickup Time </h6>
+        </div>
+        <ul class="Filter_Category_List">
+          <li class="Filter_Category_Item">
+              <mat-checkbox class="Style_1"> <span class="Text_1"> 06.00 am to  08.00am </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 08.00 am to  10.00am </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 10.00 am to  12.00pm </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 12.00 pm to  02.00pm </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 02.00 pm to  04.00pm </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 04.00 pm to  06.00pm  </span> </mat-checkbox>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="Apply_Filter" [routerLink]="['/Restaurant_List']">
+      <span> Apply Filer </span>
+    </div>
+  </div>
+</p-sidebar>
+
+
+<!-- <p-overlayPanel #FilterSideBar>
+  <div class="Filter_Section">
+    <div class="Filters_List">
+      <div class="Filter_Category">
+        <div class="Filter_Category_Header">
+          <h6> <i class="material-icons">restaurant_menu</i> Cuisines </h6>
+        </div>
+        <ul class="Filter_Category_List">
+          <li class="Filter_Category_Item">
+              <mat-checkbox class="Style_1"> <span class="Text_1"> Indian </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> Italian </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> French </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> Mexican </span> </mat-checkbox>
+          </li>
+        </ul>
+      </div>
+      <div class="Filter_Category">
+        <div class="Filter_Category_Header">
+          <h6> <i class="material-icons">fastfood</i> Foods </h6>
+        </div>
+        <ul class="Filter_Category_List">
+          <li class="Filter_Category_Item">
+              <mat-checkbox class="Style_1"> <span class="Text_1"> Apple Juice </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> Beef Roast </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> Cold Coffee</span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> Cold Drink </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> Noodles </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> Pizza </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> Steam Roast </span> </mat-checkbox>
+          </li>
+        </ul>
+      </div>
+      <div class="Filter_Category">
+        <div class="Filter_Category_Header">
+          <h6> <i class="material-icons">timelapse</i> Cutoff Time </h6>
+        </div>
+        <ul class="Filter_Category_List">
+          <li class="Filter_Category_Item">
+              <mat-checkbox class="Style_1"> <span class="Text_1"> 06.00 am to  08.00am </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 08.00 am to  10.00am </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 10.00 am to  12.00pm </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 12.00 pm to  02.00pm </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 02.00 pm to  04.00pm </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 04.00 pm to  06.00pm  </span> </mat-checkbox>
+          </li>
+        </ul>
+      </div>
+      <div class="Filter_Category">
+        <div class="Filter_Category_Header">
+          <h6> <i class="material-icons">access_time</i> Pickup Time </h6>
+        </div>
+        <ul class="Filter_Category_List">
+          <li class="Filter_Category_Item">
+              <mat-checkbox class="Style_1"> <span class="Text_1"> 06.00 am to  08.00am </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 08.00 am to  10.00am </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 10.00 am to  12.00pm </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 12.00 pm to  02.00pm </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 02.00 pm to  04.00pm </span> </mat-checkbox>
+          </li>
+          <li class="Filter_Category_Item">
+            <mat-checkbox class="Style_1"> <span class="Text_1"> 04.00 pm to  06.00pm  </span> </mat-checkbox>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</p-overlayPanel> -->

@@ -26,7 +26,7 @@
     font-weight: 600;
 }
 .loc_name > span{
-    color: #fff;
+    color: #9e9e9e;
     font-weight: 400;
     font-size: 13px;
 }
@@ -69,16 +69,16 @@
 
 
 
-.Filter_Section {
+.Action_Section {
     position: absolute;
     right: 50px;
     bottom: 120px;
 }
-.Filter_Section .Filter_Icon {
+.Action_Section .Filter_Icon {
     background-color: #fd6a03;
     color: #ffffff;
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     border-radius: 35px;
     cursor: pointer;
@@ -87,9 +87,20 @@
     padding-left: 1px;
     outline: none;
 }
-.Filter_Section .Filter_Icon img{
+.Action_Section .Filter_Icon img{
     width: 40px;
     margin: 8px;
+}
+.Action_Section .Filter_Icon i{
+    font-size: 32px;
+    margin-left: 8px;
+}
+
+.Action_Section.Left{
+    position: absolute;
+    left: 50px;
+    bottom: 120px;
+    width: 50%;
 }
 
 
@@ -135,4 +146,72 @@
     border-radius: 3px;
     cursor: pointer;
     letter-spacing: 0.4px;
+}
+
+
+.Filter_Section{
+    max-height: 100%;
+    overflow-x: auto;
+    min-width: 230px;
+    padding: 0px 10px;
+}.Filter_Section::-webkit-scrollbar {
+    width: 5px;
+}
+.Filter_Section::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+.Filter_Section::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+.Filter_Section::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.Filter_Section ul{
+    list-style:none;
+    padding: 0px;
+}
+.Filter_Section .Filter_Category .Filter_Category_Header {
+    display: block;
+    padding: 9px 0px;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 10px;
+}
+.Filter_Section .Filter_Category .Filter_Category_Header h6{
+    display: flex;
+    align-items: center;
+    color: #484848;
+    margin: 0px;
+}
+.Filter_Section .Filter_Category .Filter_Category_Header h6 i{
+    margin-right: 10px;
+    color: #484848;
+}
+.Filter_Section .Filter_Category .Filter_Category_List{
+    padding-left: 10px;
+}
+.Filter_Section .Filter_Category .Filter_Category_List .Filter_Category_Item .Text_1 {
+    font-size: 14px;
+    color: #999999;
+}
+
+.Filter_Section .Filter_Category .Price_Section{
+    padding: 0px 10px;
+}
+.Filter_Section .Filter_Category .Price_Section h6{
+    text-align: center;
+    color: #999;
+    font-weight: 500;
+}
+.Apply_Filter {
+   position: fixed;
+   background-color: #fd6a03;
+   top: calc(100% - 50px);
+   width: 250px;
+   line-height: 40px;
+   text-align: center;
+   font-weight: 600;
+   color: #ffffff;
+   letter-spacing: 0.5px;
+   cursor: pointer;
 }

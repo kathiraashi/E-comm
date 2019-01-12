@@ -11,7 +11,7 @@ import { MainRestaurantListComponent } from './components/restaurant-list/main-r
 const appRoutes: Routes = [
     { path: '',
         component: LandingPageComponent,
-        data: { animation: { value: 'Restaurant_View', } }
+        data: { animation: { value: 'Landing_Page', } }
     },
     { path: 'Landing_Page',
         component: LandingPageComponent,
